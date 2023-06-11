@@ -7,6 +7,9 @@ body {
    color: #424242;
 }
 
+/*All font sizes right now are based in ems off of the body font size. So for any responsive adjustments changes can be made to body
+first and then micro adjusted if need be. */
+
 h1 {
     font-family: "Calluna-Regular", Georgia, 'Times New Roman', Times, serif; 
     font-size: 5.25em;
@@ -92,3 +95,50 @@ h1 {
     line-height: 1.6em;
     font-weight:500;
  }
+
+ /*Some grid testing not the official grid styles */
+/*Coloring the bg so I can test grids*/
+ h3, p{
+   /*background-color: hsl(160, 100%, 75%, 0.5);*/
+ }
+
+ body{
+   margin: 5em 1.75em;
+ }
+ 
+ section{
+   /*background-color: hsl(180, 100%, 50%, 0.5);*/
+   display:grid;
+   grid-template-columns: repeat(6, :minmax(14em, 1fr));
+   grid-auto-rows:minmax(2em, auto);
+   gap:1.75em;
+ }
+
+ article{
+   /*background-color: hsl(240, 100%, 50%, 0.5);*/
+ }
+
+ #article-1 {
+   grid-column: 1/2;
+   grid-row: 1;
+ }
+ #article-2 {
+   grid-column: 2/3;
+   grid-row: 1;
+ }
+ #article-3 {
+   grid-column: 3/4;
+   grid-row: 1;
+}
+#article-4 {
+   grid-column: 4/5;
+   grid-row: 1;
+}
+#article-5 {
+   grid-column: 5/6;
+   grid-row: 1;
+}
+#article-6 {
+   grid-column: 6/7;
+   grid-row: 1;
+}
