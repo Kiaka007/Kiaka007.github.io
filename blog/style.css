@@ -3,24 +3,24 @@
 /*FONTS*/
 @font-face {
    font-family: 'Calluna-Regular';
-   src: url('Calluna-Regular-webfont.woff2') format('woff2'),
-        url('Calluna-Regular-webfont.woff') format('woff');
+   src: url('../blog/assets/Calluna-Regular-webfont.woff2') format('woff2'),
+        url('../blog/assets/Calluna-Regular-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'Calluna-It';
-   src: url('Calluna-It-webfont.woff2') format('woff2'),
-        url('Calluna-It-webfont.woff') format('woff');
+   src: url('../blog/assets/Calluna-It-webfont.woff2') format('woff2'),
+        url('../blog/assets/Calluna-It-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'Calluna-Bold';
-   src: url('Calluna-Bold-webfont.woff2') format('woff2'),
-        url('Calluna-Bold-webfont.woff') format('woff');
+   src: url('../blog/assets/Calluna-Bold-webfont.woff2') format('woff2'),
+        url('../blog/assets/Calluna-Bold-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
@@ -79,7 +79,6 @@ body {
 first and then micro adjusted if need be. */
 
 h1 {
-    font-family: 'Calluna-Regular', serif; 
     font-size: 5.25em;
     line-height: 1.3em;
     font-weight:500;
@@ -87,57 +86,53 @@ h1 {
  }
 
  h2 {
-    font-family: "Calluna-Regular", Georgia, 'Times New Roman', Times, serif; 
     font-size: 4.5em;
-    line-height: 1.3em;
+    line-height: 1.1em;
     font-weight:500;
     color: var(--colors-ink);
  }
 
  h3 {
-    font-family: "Calluna-Regular", Georgia, 'Times New Roman', Times, serif; 
     font-size: 4em;
-    line-height: 1.3em;
+    line-height: 1.1em;
     font-weight:500;
     color: var(--colors-ink);
  }
 
  h4 {
-    font-family: "Calluna-Regular", Georgia, 'Times New Roman', Times, serif; 
-    font-size: 3.5em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.5em;
     line-height: 1.3em;
-    font-weight:500;
+    font-weight:400;
     color: var(--colors-ink);
  }
 
  h5 {
-    font-family: "Calluna-Regular", Georgia, 'Times New Roman', Times, serif; 
-    font-size: 2.75em;
-    line-height: 1.3em;
-    font-weight:500;
-    color: var(--colors-ink);
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 2em;
+   line-height: 1.3em;
+   font-weight:400;
+   color: var(--colors-ink);
  }
 
  h6 {
-    font-family: "Calluna-Regular", Georgia, 'Times New Roman', Times, serif; 
-    font-size: 2em;
-    line-height: 1.3em;
-    font-weight:500;
+    font-family: 'IBM Plex Mono' ,'Courier New', Courier, monospace ; 
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-weight:400;
     color: var(--colors-ink);
- }
-
- .super-header {
-    font-family: "IBM Plex Mono", mono; 
-    font-size: 1.25em;
-    line-height: 1.3em;
-    font-weight:500;
-    color: #242424;
+    letter-spacing: 0.32px;
     text-transform: uppercase;
  }
 
  label {
-    color: #242424;
-    font-weight: bold;
+   font-family: 'IBM Plex Mono' ,'Courier New', Courier, monospace ; 
+   font-size: 1em;
+   line-height: 1.4em;
+   font-weight: 600;
+   color: var(--colors-ink);
+   letter-spacing: 0.32px;
+   text-transform: uppercase;
  }
 
  .body-xl {
@@ -153,14 +148,14 @@ h1 {
  }
 
  .body-s {
-    font-size: 14px;
-    line-height: 1.5em;
+    font-size: 0.875em;
+    line-height: 1.4em;
     font-weight:500;
  }
 
  .body-xs {
     font-size: 0.75em;
-    line-height: 1.6em;
+    line-height: 1.4em;
     font-weight:500;
  }
 
