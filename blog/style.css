@@ -1,21 +1,89 @@
+/*ATOMS------------------------------------------------------------*/
 
+/*FONTS*/
+@font-face {
+   font-family: 'Calluna-Regular';
+   src: url('Calluna-Regular-webfont.woff2') format('woff2'),
+        url('Calluna-Regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Calluna-It';
+   src: url('Calluna-It-webfont.woff2') format('woff2'),
+        url('Calluna-It-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Calluna-Bold';
+   src: url('Calluna-Bold-webfont.woff2') format('woff2'),
+        url('Calluna-Bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/*COLORS*/
+:root {
+   --colors-ink: #222326;
+   --colors-ink-faded: #3B4045;
+   --colors-bronze-dark: #753009;
+   --colors-bronze: #BA6C3B;
+   --colors-gold-dark: #BF7F02;
+   --colors-gold: #E8BE52;
+   --colors-sakura-dark: #5E313E;
+   --colors-sakura: #F09C94;
+   --colors-olive-dark: #41452B;
+   --colors-olive: #8A8860;
+   --colors-blue-dark: #293E56;
+   --colors-blue: #607C95;
+   --paper-gray: #F3F3F4;
+   --paper-gray-high: hsla(210, 8%, 85%, 0.3);
+   --paper-gray-mid: hsla(210, 8%, 85%, 0.6);
+   --paper-gray-low: hsla(210, 8%, 85%, 1);
+   --paper-cream: #FBF9F9;
+   --paper-cream-high: hsla(25, 50%, 88%, 1);
+   --paper-cream-mid: hsla(25, 50%, 88%, 0.6);
+   --paper-cream-low: hsla(25, 50%, 88%, 0.3);
+   --paper-pollen: #FDFDF7;
+   --paper-pollen-high:hsla(47, 74%, 85%, 1);
+   --paper-pollen-mid: hsla(47, 74%, 85%, 0.6);
+   --paper-pollen-low: hsla(47, 74%, 85%, 0.3);
+   --paper-sakura: #FFEFEE;
+   --paper-sakura-high:hsla(4, 85%, 90%, 1);
+   --paper-sakura-mid:hsla(4, 85%, 90%, 0.6);
+   --paper-sakura-low:hsla(4, 85%, 90%, 0.3);
+   --paper-olive: #EAEBE0;
+   --paper-olive-high: hsla(62, 22%, 70%, 1);
+   --paper-olive-mid: hsla(62, 22%, 70%, 0.6);
+   --paper-olive-low: hsla(62, 22%, 70%, 0.3);
+   --paper-blue: #E0E7EB;
+   --paper-blue-high:hsla(208, 22%, 70%, 1);
+   --paper-blue-mid: hsla(208, 22%, 70%, 0.6);
+   --paper-blue-low: hsla(208, 22%, 70%, 0.3);   
+}
+
+
+/*TYPE STYLES*/
 body {
-   font-family: "Calluna-Regular", Georgia, 'Times New Roman', Times, serif; 
+   font-family: 'Calluna-Regular', Georgia, 'Times New Roman', Times, serif; 
    font-size: 16px;
    line-height: 1.4em;
-   font-weight:500;
-   color: #424242;
+   font-weight:normal;
+   color: var(--colors-ink-faded, #242424);
 }
 
 /*All font sizes right now are based in ems off of the body font size. So for any responsive adjustments changes can be made to body
 first and then micro adjusted if need be. */
 
 h1 {
-    font-family: "Calluna-Regular", Georgia, 'Times New Roman', Times, serif; 
+    font-family: 'Calluna-Regular', serif; 
     font-size: 5.25em;
     line-height: 1.3em;
     font-weight:500;
-    color: #242424;
+    color: var(--colors-ink);
  }
 
  h2 {
@@ -23,7 +91,7 @@ h1 {
     font-size: 4.5em;
     line-height: 1.3em;
     font-weight:500;
-    color: #242424;
+    color: var(--colors-ink);
  }
 
  h3 {
@@ -31,7 +99,7 @@ h1 {
     font-size: 4em;
     line-height: 1.3em;
     font-weight:500;
-    color: #242424;
+    color: var(--colors-ink);
  }
 
  h4 {
@@ -39,7 +107,7 @@ h1 {
     font-size: 3.5em;
     line-height: 1.3em;
     font-weight:500;
-    color: #242424;
+    color: var(--colors-ink);
  }
 
  h5 {
@@ -47,7 +115,7 @@ h1 {
     font-size: 2.75em;
     line-height: 1.3em;
     font-weight:500;
-    color: #242424;
+    color: var(--colors-ink);
  }
 
  h6 {
@@ -55,7 +123,7 @@ h1 {
     font-size: 2em;
     line-height: 1.3em;
     font-weight:500;
-    color: #242424;
+    color: var(--colors-ink);
  }
 
  .super-header {
