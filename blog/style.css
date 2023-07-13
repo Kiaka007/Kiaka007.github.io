@@ -76,7 +76,7 @@
    --spacing-5xl:5em;
    --spacing-6xl:10em;
    --breakpoint-desktop: 1440px;
-   --breakpoint-mobile: 511px;
+   --breakpoint-mobile: 500px;
 
 }
 
@@ -96,7 +96,7 @@ first and then micro adjusted if need be. */
 
 h1 {
     font-size: 5.25em;
-    line-height: 1.3em;
+    line-height: 1.1em;
     font-weight:500;
     color: var(--colors-ink);
     margin: 0px;
@@ -157,7 +157,7 @@ h1 {
    font-family: 'IBM Plex Mono' ,'Courier New', Courier, monospace ; 
    font-size: 1em;
    line-height: 1.4em;
-   font-weight: 600;
+   font-weight: 500;
    color: var(--colors-ink);
    letter-spacing: 0.32px;
    text-transform: uppercase;
@@ -203,7 +203,7 @@ h1 {
 .grid-flex-6{
    display: flex;
    padding: 0px 1.75em;
-   justify-content:flex-start;
+   justify-content:space-evenly;
    align-items: flex-start;
    gap: var(--spacing-base, 0.5em) var(--spacing-base, 0.5em);
    flex-wrap: wrap;
@@ -219,7 +219,7 @@ h1 {
 .grid-flex-5{
    display: flex;
    padding: 0px 1.75em;
-   justify-content:flex-start;
+   justify-content:space-evenly;
    align-items: flex-start;
    gap: var(--spacing-xs, 1em) var(--spacing-xs, 1em);
    flex-wrap: wrap;
@@ -234,7 +234,7 @@ h1 {
 .grid-flex-4{
    display: flex;
    padding: 0px 1.75em;
-   justify-content:flex-start;
+   justify-content: space-evenly;
    align-items: flex-start;
    gap: var(--spacing-sm, 1.5em) var(--spacing-sm, 1.5em);
    flex-wrap: wrap;
@@ -250,7 +250,7 @@ h1 {
 .grid-flex-3{
    display: flex;
    padding: 0px 1.75em;
-   justify-content:flex-start;
+   justify-content:space-evenly;
    align-items: flex-start;
    gap: var(--spacing-md, 2em) var(--spacing-md, 2em);
    flex-wrap: wrap;
@@ -266,7 +266,7 @@ h1 {
 .grid-flex-2{
    display: flex;
    padding: 0px 1.75em;
-   justify-content:flex-start;
+   justify-content:space-evenly;
    align-items: flex-start;
    gap: var(--spacing-lg, 2.5em) var(--spacing-lg, 2.5em);
    flex-wrap: wrap;
@@ -356,25 +356,65 @@ h1 {
 
 /*----MOLECULES----*/
 
-
-nav .nav-left{
+#nav-container{
+   justify-content: space-between;
+}
+#nav-logo{
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
-   gap: var(--spacing-xs, 16px);
-   flex: 1 0 0;
-   align-self: stretch;
+   align-items: center;
+   padding: 0px;
+   min-width: 3em;
+   max-width: 3em;
 }
-nav .nav-items{
+#nav-items{
    display: flex;
    justify-content: flex-end;
    align-items: center;
    gap: var(--spacing-sm, 24px);
    flex: 1 0 0;
+   flex-direction: row;
 }
 #social-list{
    display: flex;
    justify-content: flex-end;
    align-items: center;
    gap: var(--spacing-base, 8px);
+}
+
+/*HEADERS*/
+#header-center{
+   padding: var(--spacing-md, 2.5em) 0px;
+}
+#spacer-min{
+   flex:0 2 1.75em;
+   min-width: 1.75em;
+}
+#spacer-fill{
+   flex: 1 0 auto;
+   min-width: none;
+   max-width: auto;
+}
+#header-content-center{
+   text-align: center;
+   align-items: center;
+   max-width: 60%;
+}
+
+/*Content Blocks*/
+.vertical-base{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: var(--base, 8px);
+   align-self: stretch;
+}
+
+/*Image Treatments*/
+.timeline-image{
+   height: fit-content;
+   max-width: var(--spacing-6xl, 160px);
+   align-self: stretch;
+   background: var(--paper-gray-mid, #D6D9DC);
+   mix-blend-mode: multiply;
 }
