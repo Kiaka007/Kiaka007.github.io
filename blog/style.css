@@ -88,8 +88,8 @@ body {
    line-height: 1.4em;
    font-weight:normal;
    color: var(--colors-ink-faded, #242424);
-   padding: 1.75em 0px;
-   margin: 0px;
+   padding: 1.75em;
+   margin: 0px 0px 5em 0px;
 }
 
 /*All font sizes right now are based in ems off of the body font size. So for any responsive adjustments changes can be made to body
@@ -302,7 +302,7 @@ h1 {
    flex-wrap: nowrap;
    overflow-x: scroll;
    width: 97%;
-   padding:var(--spacing-4xl) 1.75em;
+   padding:var(--spacing-3xl) 1.75em;
 }
 .scroll-content{
    display: flex;
@@ -414,7 +414,7 @@ h1 {
 
 /*HEADERS*/
 #header-center{
-   padding: var(--spacing-md, 2.5em) 0px;
+   padding: var(--spacing-sm, 2.5em) 0px;
 }
 #spacer-min{
    flex:0 2 1.75em;
