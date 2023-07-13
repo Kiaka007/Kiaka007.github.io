@@ -88,7 +88,8 @@ body {
    line-height: 1.4em;
    font-weight:normal;
    color: var(--colors-ink-faded, #242424);
-   padding: 1.75em;
+   padding: 1.75em 0px;
+   margin: 0px;
 }
 
 /*All font sizes right now are based in ems off of the body font size. So for any responsive adjustments changes can be made to body
@@ -158,7 +159,6 @@ h1 {
    font-size: 1em;
    line-height: 1.4em;
    font-weight: 500;
-   color: var(--colors-ink);
    letter-spacing: 0.32px;
    text-transform: uppercase;
    margin: 0px;
@@ -180,6 +180,14 @@ h1 {
     margin: 0px;
     padding: 0px;
  }
+
+ .body-md {
+   font-size: 1em;
+   line-height: 1.4em;
+   font-weight:normal;
+   margin: 0px;
+   padding: 0px;
+}
 
  .body-s {
     font-size: 0.875em;
@@ -285,6 +293,28 @@ h1 {
    justify-content:flex-start;
    align-items: flex-start;
    gap: var(--spacing-lg, 2.5em);
+}
+
+/*--HORIZONTAL SCROLL--*/
+
+.horizontal-scroll{
+   display: flex;
+   flex-wrap: nowrap;
+   overflow-x: scroll;
+   width: 97%;
+   padding:var(--spacing-4xl) 1.75em;
+}
+.scroll-content{
+   display: flex;
+   gap:var(--spacing-base, 0.5em) var(--spacing-base, 0.5em);
+}
+.col-horizontal-6{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-right: 0.5em;
+   min-width: 16em;
+   max-width: 16em;
 }
 
 /*------GRID TEMPLATES--------*/
@@ -406,15 +436,24 @@ h1 {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   gap: var(--base, 8px);
+   gap: var(--spacing-base, 0.5em);
+   align-self: stretch;
+}
+.vertical-xs{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: var(--spacing-xs, 1em);
    align-self: stretch;
 }
 
 /*Image Treatments*/
 .timeline-image{
    height: fit-content;
-   max-width: var(--spacing-6xl, 160px);
-   align-self: stretch;
+   max-width: 80%;
+   object-fit: cover;
    background: var(--paper-gray-mid, #D6D9DC);
    mix-blend-mode: multiply;
+   margin: var(--spacing-xs) 0px;
 }
+

@@ -13,6 +13,7 @@ body{
 
 #date-title{
     border-top: 2px solid var(--accent-primary-light, #607C95);
+    color: var(--accent-primary-dark);
     display: flex;
     padding: 1em 0px 0.5em 0px;
     flex-direction: column;
