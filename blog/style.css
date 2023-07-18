@@ -405,6 +405,18 @@ h1 {
    flex: 1 0 0;
    flex-direction: row;
 }
+label a{
+   color: var(--colors-ink);
+   text-decoration: none;
+}
+label a:hover{
+   color: var(--colors-ink);
+   border-bottom: 2px solid var(--colors-ink);
+}
+label.current-page{
+   color: var(--colors-ink);
+   border-bottom: 2px solid var(--colors-ink);
+}
 #social-list{
    display: flex;
    justify-content: flex-end;
