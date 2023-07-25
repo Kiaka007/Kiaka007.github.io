@@ -403,7 +403,6 @@ h1 {
    flex-direction: row;
    gap: var(--spacing-sm);
    align-items: flex-start;
-   
 }
 .frame-label{
    display: flex;
@@ -445,7 +444,8 @@ h1 {
 
 /*Image Treatments*/
 .image-framed{
-   width: 440px;
+   width: fit-content;
+   height: 550px;
    border-radius: 2px;
    box-shadow: 0px 29px 16px 4px rgba(36, 36, 36, 0.08), 
    0px 27px 8px -16px rgba(50, 51, 52, 0.15), 
