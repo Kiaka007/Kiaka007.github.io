@@ -445,7 +445,7 @@ h1 {
 /*Image Treatments*/
 .image-framed{
    width: fit-content;
-   height: 550px;
+   height: 424px;
    border-radius: 2px;
    box-shadow: 0px 29px 16px 4px rgba(36, 36, 36, 0.08), 
    0px 27px 8px -16px rgba(50, 51, 52, 0.15), 
