@@ -2,67 +2,43 @@
 
 /*FONTS*/
 @font-face {
-   font-family: 'Calluna-Regular';
-   src: url('../blog/assets/Calluna-Regular-webfont.woff2') format('woff2'),
-        url('../blog/assets/Calluna-Regular-webfont.woff') format('woff');
-   font-weight: normal;
+   font-family: 'Gerstner-ProgrammMedium';
+   src: url('../blog/assets/Gerstner-ProgrammMedium.woff2') format('woff2'),
+        url('../blog/assets/Gerstner-ProgrammMedium.woff') format('woff');
    font-style: normal;
 }
 
 @font-face {
-   font-family: 'Calluna-It';
-   src: url('../blog/assets/Calluna-It-webfont.woff2') format('woff2'),
-        url('../blog/assets/Calluna-It-webfont.woff') format('woff');
+   font-family: 'Gerstner-ProgrammRegular';
+   src: url('../blog/assets/Gerstner-ProgrammRegular.woff2') format('woff2'),
+        url('../blog/assets/Gerstner-ProgrammRegular.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
 
-@font-face {
-   font-family: 'Calluna-Bold';
-   src: url('../blog/assets/Calluna-Bold-webfont.woff2') format('woff2'),
-        url('../blog/assets/Calluna-Bold-webfont.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
-}
 
 /*COLORS*/
 :root {
-   --colors-ink: #222326;
-   --colors-ink-faded: #3B4045;
-   --colors-bronze-dark: #753009;
-   --colors-bronze: #BA6C3B;
-   --colors-gold-dark: #BF7F02;
-   --colors-gold: #E8BE52;
-   --colors-sakura-dark: #5E313E;
-   --colors-sakura: #F09C94;
-   --colors-olive-dark: #41452B;
-   --colors-olive: #8A8860;
-   --colors-blue-dark: #293E56;
-   --colors-blue: #607C95;
-   --paper-gray: #F3F3F4;
-   --paper-gray-high: hsla(210, 8%, 85%, 0.3);
-   --paper-gray-mid: hsla(210, 8%, 85%, 0.6);
-   --paper-gray-low: hsla(210, 8%, 85%, 1);
-   --paper-cream: #FBF9F9;
-   --paper-cream-high: hsla(25, 50%, 88%, 1);
-   --paper-cream-mid: hsla(25, 50%, 88%, 0.6);
-   --paper-cream-low: hsla(25, 50%, 88%, 0.3);
-   --paper-pollen: #FDFDF7;
-   --paper-pollen-high:hsla(47, 74%, 85%, 1);
-   --paper-pollen-mid: hsla(47, 74%, 85%, 0.6);
-   --paper-pollen-low: hsla(47, 74%, 85%, 0.3);
-   --paper-sakura: #FFEFEE;
-   --paper-sakura-high:hsla(4, 85%, 90%, 1);
-   --paper-sakura-mid:hsla(4, 85%, 90%, 0.6);
-   --paper-sakura-low:hsla(4, 85%, 90%, 0.3);
-   --paper-olive: #EAEBE0;
-   --paper-olive-high: hsla(62, 22%, 70%, 1);
-   --paper-olive-mid: hsla(62, 22%, 70%, 0.6);
-   --paper-olive-low: hsla(62, 22%, 70%, 0.3);
-   --paper-blue: #E0E7EB;
-   --paper-blue-high:hsla(208, 22%, 70%, 1);
-   --paper-blue-mid: hsla(208, 22%, 70%, 0.6);
-   --paper-blue-low: hsla(208, 22%, 70%, 0.3);
+   --color-charcoal:#323334;
+   --color-graphite-b6:#4B4D4E;
+   --color-graphite-h6:#A8A6A4;
+   --color-accent-sakura400:#5E313E;
+   --color-accent-sakura300:#793E50;
+   --color-accent-sakura200:#F09C94;
+   --color-accent-sakura100:#FBD3D0;
+   --color-accent-olive400:#41452B;
+   --color-accent-olive300:#525837;
+   --color-accent-olive200:#8A8860;
+   --color-accent-olive100:#C2C3A2;
+   --color-accent-blue400:#293E56;
+   --color-accent-blue300:#35506E;
+   --color-accent-blue200:#607C95;
+   --color-accent-blue100:#A2B4C3;
+   --paper-off-white: #FBFAF8;
+   --paper-vanilla: #FBF6EF;
+   --paper-cream: #F8F1E2;
+   --paper-powder-blue:#E0E7EB;
+   --paper-mixed: #BCA78A;
    
    --spacing-base:0.5em;
    --spacing-xs:1em;
@@ -83,11 +59,11 @@
 
 /*TYPE STYLES*/
 body {
-   font-family: 'Calluna-Regular', Georgia, 'Times New Roman', Times, serif; 
+   font-family: 'IBM Plex Sans', sans-serif;
    font-size: 16px;
-   line-height: 1.4em;
+   line-height: 20px; /*1.25em*/
    font-weight:normal;
-   color: var(--colors-ink-faded, #242424);
+   color: var(--color-charcoal);
    padding: 1.75em 1.75em;
    margin: 0px 0px 5em 0px;
 }
@@ -96,113 +72,96 @@ body {
 first and then micro adjusted if need be. */
 
 h1 {
-    font-size: 5.25em;
-    line-height: 1.1em;
+   font-family: 'Gerstner-ProgrammMedium', 'IBM Plex Sans', sans-serif;
+    font-size: 4.5em;
+    line-height: 1em;
     font-weight:500;
-    color: var(--colors-ink);
-    margin: 0px;
-    padding: 0px;
  }
 
  h2 {
-    font-size: 4.5em;
-    line-height: 1.1em;
+   font-family: 'Gerstner-ProgrammMedium', 'IBM Plex Sans', sans-serif;
+    font-size: 3.5em;
+    line-height: 1em;
     font-weight:500;
-    color: var(--colors-ink);
-    margin: 0px;
-    padding: 0px;
  }
 
  h3 {
-    font-size: 4em;
-    line-height: 1.1em;
+   font-family: 'Gerstner-ProgrammMedium', 'IBM Plex Sans', sans-serif;
+    font-size: 3em;
+    line-height: 1.25em;
     font-weight:500;
-    color: var(--colors-ink);
-    margin: 0px;
-    padding: 0px;
  }
 
  h4 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 2.5em;
-    line-height: 1.3em;
+   font-family: 'Gerstner-ProgrammRegular', 'IBM Plex Sans', sans-serif;
+    font-size: 2em;
+    line-height: 1.25em;
     font-weight:400;
-    color: var(--colors-ink);
-    margin: 0px;
-    padding: 0px;
  }
 
  h5 {
-   font-family: 'IBM Plex Sans', sans-serif;
-   font-size: 2em;
-   line-height: 1.3em;
+   font-family: 'Gerstner-ProgrammRegular', 'IBM Plex Sans', sans-serif;
+   font-size: 1.5em;
+   line-height: 1.25em;
    font-weight:400;
-   color: var(--colors-ink);
-   margin: 0px;
-   padding: 0px;
  }
 
  h6 {
+   font-family: 'Gerstner-ProgrammRegular', 'IBM Plex Sans', sans-serif;
     font-family: 'IBM Plex Mono' ,'Courier New', Courier, monospace ; 
-    font-size: 1.25em;
-    line-height: 1.4em;
+    font-size: 1.125em;
+    line-height: 1.25em;
     font-weight:400;
-    color: var(--colors-ink);
     letter-spacing: 0.32px;
     text-transform: uppercase;
-    margin: 0px;
-    padding: 0px;
+ }
+
+ .h6-alt {
+    font-family: 'IBM Plex Mono' ,'Courier New', Courier, monospace ; 
+    font-size: 1em;
+    line-height: 1.25em;
+    font-weight:400;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
  }
 
  label {
    font-family: 'IBM Plex Mono' ,'Courier New', Courier, monospace ; 
    font-size: 1em;
-   line-height: 1.4em;
+   line-height: 1.25em;
    font-weight: 500;
    letter-spacing: 0.32px;
    text-transform: uppercase;
-   margin: 0px;
-   padding: 0px;
  }
 
  .body-xl {
     font-size: 1.5em;
-    line-height: 1.4em;
+    line-height: 1.25em;
     font-weight:500;
-    margin: 0px;
-    padding: 0px;
  }
 
  .body-l {
     font-size: 1.25em;
-    line-height: 1.4em;
+    line-height: 1.25em;
     font-weight:500;
-    margin: 0px;
-    padding: 0px;
  }
 
  .body-md {
    font-size: 1em;
-   line-height: 1.4em;
+   line-height: 1.25em;
    font-weight:normal;
-   margin: 0px;
-   padding: 0px;
 }
 
  .body-s {
     font-size: 0.875em;
-    line-height: 1.4em;
+    line-height: 1.25em;
     font-weight:500;
-    margin: 0px;
-    padding: 0px;
  }
 
  .body-xs {
     font-size: 0.75em;
-    line-height: 1.4em;
+    line-height: 1.25em;
     font-weight:500;
-    margin: 0px;
-    padding: 0px;
  }
 
 /*GRID MOLECULES------------------------------------------*/
