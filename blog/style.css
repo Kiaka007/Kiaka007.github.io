@@ -171,6 +171,9 @@ h1 {
  a {
    color: var(--color-charcoal);
  }
+ a:hover{
+   color: var(--color-bronze-dark);
+ }
 
 
 /*GRID MOLECULES------------------------------------------*/
@@ -263,27 +266,6 @@ h1 {
    gap: var(--spacing-lg, 2.5em);
 }
 
-/*--HORIZONTAL SCROLL--*/
-
-.horizontal-scroll{
-   display: flex;
-   flex-wrap: nowrap;
-   overflow-x: scroll;
-   width: 97%;
-   padding:var(--spacing-3xl) 1.75em;
-}
-.scroll-content{
-   display: flex;
-   gap:var(--spacing-base, 0.5em) var(--spacing-base, 0.5em);
-}
-.col-horizontal-6{
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   padding-right: 0.5em;
-   min-width: 16em;
-   max-width: 16em;
-}
 
 /*------GRID TEMPLATES--------*/
 .grid-6{
@@ -291,7 +273,7 @@ h1 {
    grid-template-columns: repeat(6, minmax(13em, 1fr));
    grid-auto-rows: auto;
    gap:var(--spacing-base, 0.5em);
-   margin: 0px 1.75em;
+   padding: var(--spacing-xl) 0em;
 }
 .grid-5{
    display: grid;
@@ -433,6 +415,16 @@ h1 {
    padding: var(--spacing-xs) 0em;
 }
 
+/*COLLECTIONS MAIN*/
+.pin{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: var(--spacing-xs);
+   padding:var(--spacing-xs) var(--spacing-base);
+}
+
+
 /*SCROLLBAR*/
 /* width */
 ::-webkit-scrollbar {
@@ -452,7 +444,6 @@ h1 {
 }
 
 /*Image Treatments*/
-
 .image-framed{
    width: 440px;
    border-radius: 2px;
@@ -460,7 +451,17 @@ h1 {
    0px 27px 8px -16px rgba(50, 51, 52, 0.15), 
    -2px 2px 2px 0px rgba(255, 255, 255, 0.15) inset;
 }
-
+.image-printed{
+   width: 100%;
+   height:fit-content
+   border-radius: 2px;
+   opacity: 0.9;
+   box-shadow: -1px 1px 1px 0px rgba(50, 51, 52, 0.15) inset;
+   filter: saturate(10%);
+}
+.image-printed:hover{
+   filter: saturate(100%);
+}
 
 
 
