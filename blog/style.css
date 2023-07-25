@@ -73,7 +73,7 @@ body {
    font-weight:normal;
    color: var(--color-charcoal);
    padding: 1.75em 1.75em;
-   margin: 0px 0px 5em 0px;
+   margin: 0px 0px 3em 0px;
 }
 
 /*All font sizes right now are based in ems off of the body font size. So for any responsive adjustments changes can be made to body
@@ -82,21 +82,21 @@ first and then micro adjusted if need be. */
 h1 {
    font-family: 'Gerstner-ProgrammMedium', 'IBM Plex Sans', sans-serif;
     font-size: 4.5em;
-    line-height: 1em;
+    line-height: 1.1em;
     font-weight:500;
  }
 
  h2 {
    font-family: 'Gerstner-ProgrammMedium', 'IBM Plex Sans', sans-serif;
     font-size: 3.5em;
-    line-height: 1em;
+    line-height: 1.1em;
     font-weight:500;
  }
 
  h3 {
    font-family: 'Gerstner-ProgrammMedium', 'IBM Plex Sans', sans-serif;
     font-size: 3em;
-    line-height: 1.25em;
+    line-height: 1.1em;
     font-weight:500;
  }
 
@@ -168,6 +168,10 @@ h1 {
     line-height: 1.25em;
     font-weight:500;
  }
+ a {
+   color: var(--color-charcoal);
+ }
+
 
 /*GRID MOLECULES------------------------------------------*/
 
@@ -353,6 +357,7 @@ h1 {
 .nav{
    display: flex;
    justify-content: space-between;
+   padding-bottom: 1em;
 }
 #nav-logo{
    min-width: 3em;
@@ -379,23 +384,12 @@ h1 {
 }
 
 /*HEADERS*/
-#header-center{
-   padding: var(--spacing-sm, 2.5em) 0px;
+.header-left{
+   display: flex;
+   flex-direction: column;
+   padding: var(--spacing-sm) 0em;
 }
-#spacer-min{
-   flex:0 2 1.75em;
-   min-width: 1.75em;
-}
-#spacer-fill{
-   flex: 1 0 auto;
-   min-width: none;
-   max-width: auto;
-}
-#header-content-center{
-   text-align: center;
-   align-items: center;
-   max-width: 60%;
-}
+
 
 /*Content Blocks*/
 .vertical-base{
@@ -413,13 +407,60 @@ h1 {
    align-self: stretch;
 }
 
-/*Image Treatments*/
-.timeline-image{
-   height: fit-content;
-   max-width: 80%;
-   object-fit: cover;
-   background: var(--paper-gray-mid, #D6D9DC);
-   mix-blend-mode: multiply;
-   margin: var(--spacing-xs) 0px;
+/*Gallery Main*/
+.gallery{
+   display: flex;
+   flex-direction: row;
+   gap: var(--spacing-5xl);
+   flex-wrap: nowrap;
+   padding: var(--spacing-xl) 0em;
+   overflow-x: scroll;
 }
+.entry{
+   display: inline-flex;
+   flex-direction: row;
+   gap: var(--spacing-sm);
+   align-items: flex-start;
+   
+}
+.frame-label{
+   display: flex;
+   width: 200px;
+   align-self: stretch;
+   flex-direction: column;
+   justify-content: end;
+   gap: var(--spacing-xs, 1em);
+   padding: var(--spacing-xs) 0em;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+  height: 0.75em;
+  width: 0.5em;
+  mix-blend-mode: multiply;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  visibility: hidden;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dedddd;
+  border-radius: 0.5em;
+}
+
+/*Image Treatments*/
+
+.image-framed{
+   width: 440px;
+   border-radius: 2px;
+   box-shadow: 0px 29px 16px 4px rgba(36, 36, 36, 0.08), 
+   0px 27px 8px -16px rgba(50, 51, 52, 0.15), 
+   -2px 2px 2px 0px rgba(255, 255, 255, 0.15) inset;
+}
+
+
+
 
