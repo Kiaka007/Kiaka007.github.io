@@ -456,7 +456,6 @@ h1 {
    height:fit-content;
    border-radius: 2px;
    opacity: 0.9;
-   box-shadow: -1px 1px 1px 0px rgba(50, 51, 52, 0.15) inset;
    filter: saturate(10%);
 }
 .image-printed:hover{
