@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../blog/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../portfolio/style.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <!--Google Link for Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <script src="../portfolio/script.js" defer></script>
 </head>
-<body style="background-color: var(--paper-off-white); mix-blend-mode: multiply;">
-    <nav class="nav">
+<body id="no-margin-body" style="background-color: var(--paper-off-white); mix-blend-mode: multiply;">
+    <nav class="nav" style="padding: 1.5em 2.25em 1em">
         <div id="nav-logo">
         <a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="84" viewBox="0 0 48 102" fill="none">
             <g clip-path="url(#clip0_69_79)">
@@ -20,44 +24,45 @@
         </a>
         </div>
         <div id="nav-items">
-            <h6><a href="../blog/index.html">Gallery</a></h6>
-            <h6><a href="../blog/collections.html">Collections</a></h6>
-            <h6 class="current-page"><a href="../blog/about.html">About</a></h6>
+            <h6 class="current-page"><a href="../portfolio/index.html">Portfolio</a></h6>
+            <h6><a href="https://drive.google.com/file/d/1FoZfB7mdy4UBszmWWzZdEQoKzJyzjWQC/view?usp=sharing" target=”_blank”>Resume/CV</a></h6>
+            <h6><a href="../portfolio/about.html">About</a></h6>
         </div>
     </nav>
-    <main class="grid-flex-2">
-        <!--Column 1-->
-        <article class="col-flex-2">
-            <h2 style="padding-top: 1em;">About</h2>
-            <p style="padding-top: 0.5em;" class="body-l">
-                Kyoko Eng is a Nashville based experiential artist and designer. Her digital spaces, performances, and mixed-media artifacts examine the underlying tensions between Nature & Technology, Privacy & AI, and the perception of the Self vs. the Collective. 
-                She currently serves as the UX/UI lead for OpenMined’s opensource library <a href="https://github.com/OpenMined/pysyft">PySyft</a>. Her recent work explores how interfaces can help lower the barrier to using Privacy Enhancing Technologies (PETs).
-            </p>
-            <p style="padding-top: 1em;" class="body-l">
-                Some notable projects in this space have been <a href="https://twitter.com/openminedorg/status/1573519112348770304">Christ Church Call Initiative on Algorithmic Outcomes (2023)</a>, <a href="https://www.whitehouse.gov/wp-content/uploads/2023/03/National-Strategy-to-Advance-Privacy-Preserving-Data-Sharing-and-Analytics.pdf">The U.S. Census and UN PET Lab (2022)</a>, and <a href="https://blog.openmined.org/announcing-our-partnership-with-twitter-to-advance-algorithmic-transparency/">Twitter’s Advancing Algorithmic Transparency (2022)</a>. 
-                She is a board member of the Nashville Dance Collective and is a 2023-2024 Artwire Fellow at Oz Arts. She holds a B.F.A. in Graphic Design from the University of Tennessee Knoxville.
-            </p>
-            <div class="link-listing">
-                <p class="body-md"><a href="https://drive.google.com/file/d/1FoZfB7mdy4UBszmWWzZdEQoKzJyzjWQC/view?usp=sharing" target=”_blank”>→ Design Resume</a></p>
-                <p class= "body-md"><a href="https://drive.google.com/file/d/18O9md4VjZYBTAaQkRbHzWsWOGDbRRwy6/view?usp=sharing" target=”_blank”>→ Art CV</a></p>
-            </div>
-        </article>
-        <!--Column 2-->
-        <div class="col-flex-2">
-            <div class="tiled-image-container">
-                <figure>
-                    <img src="../blog/assets/images/back_4_noise.jpg" alt="" width="100%" height="">
-                </figure>
-                <div class="tiled-image-column">
-                    <figure>
-                        <img src="../blog/assets/images/hand_1.jpg" alt="" width="100%" height="">
-                    </figure>
-                    <figure>
-                        <img src="../blog/assets/images/hand_2.jpg" alt="" width="100%" height="">
-                    </figure>
-                </div>
-            </div>
+    <div class="banner-container">
+        <header class="col-flex-2">
+            <h2>Nice to meet you // <br>I'm Kyoko Eng</h2>
+            <h4 style="color: var(--color-graphite-h6)">My work focuses on crafting spaces founded on research & strategy, implemented with empathy & vision.</h4>
+        </header>
+        <div class="banner-flex-2">
+            <img src="../portfolio/assets/banner.png" id="banner">
         </div>
+    </div>
+    <!--After 3 change this to be the slider tags from Blog about-->
+    <main class="portfolio-container">
+        <!--Topic 1-->
+        <article class="portfolio-item">
+            <label style="color: var(--color-accent-olive200);">Topic</label>
+            <h5>How can data privacy decisions be placed within the context of intention and time?</h5>
+        </article>
+        <a href="../portfolio/use-cases/pygrid-0-6-0-summer-2021.html" class="portfolio-item">
+            <label style="color: var(--color-accent-olive200);">Summer 2021</label>
+            <h5>PyGrid 0.6.0 // Triaging Data Release Requests with Differential Privacy</h5>
+            <p class="body-md" style="color: var(--color-accent-olive200)">User Research Lead, UX Lead, UI Designer</p>
+            <img src="../portfolio/assets/0-6-0/upgrade-budget-2.PNG" class="portfolio-slider-image">
+        </a>
+        <a href="../portfolio/use-cases/pygrid-0-6-0-early-access.html" class="portfolio-item">
+            <label style="color: var(--color-accent-olive200);">Fall 2021</label>
+            <h5>PyGrid 0.6.0 // Early Access Group</h5>
+            <p class="body-md" style="color: var(--color-accent-olive200)">User Research Lead, UX Lead</p>
+            <img src="../portfolio/assets/early-access/figma-jam-board.PNG" class="portfolio-slider-image">
+        </a>
+        <a href="../portfolio/use-cases/pygrid-0-7-0-dp-metadata.html" class="portfolio-item">
+            <label style="color: var(--color-accent-olive200);">Spring 2022</label>
+            <h5>PyGrid 0.7.0 // Interface for Differential Privacy Metadata</h5>
+            <p class="body-md" style="color: var(--color-accent-olive200)">Team Lead, UX Lead, UI Designer</p>
+            <img src="../portfolio/assets/0-7-0/dp-metadata-9.PNG" class="portfolio-slider-image">
+        </a>
     </main>
 </body>
 </html>
