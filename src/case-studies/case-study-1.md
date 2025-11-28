@@ -39,7 +39,7 @@ When a Data Scientist published a result using `result.publish(sigma=_)` (Figure
 
 ***
 
-![Screenshot of project](/assets/images/portfolio/0-6-0/ds_getting_result_with_pb.PNG)
+![Screenshot of project](/assets/images/portfolio/case-study-1/ds_getting_result_with_pb.PNG)
 
 {% bodys %}
 **Figure 1.0** | PySyft 0.6.0 a data scientist using a privacy budget to publish a result
@@ -51,7 +51,7 @@ If a query exceeded the allocated privacy budget, the DP mechanism automatically
 Before beginning our user study we acknowledged that our tool, as it was, required both Data Owners and Data Scientists to have a good understanding of how risk and accuracy were tied to *epsilon —* a niche topic that’s usually reserved for privacy experts. Additionally, our tool required users to be proficient with Python and Jupyter Notebooks. It was clear that these limitations needed to be overcome if we were to expect a scaled use of the tool.
 
 ***
-![Screenshot of project](/assets/images/portfolio/0-6-0/publish_request_diagram.jpg)
+![Screenshot of project](/assets/images/portfolio/case-study-1/publish_request_diagram.jpg)
 
 {% bodys %}
 **Figure 1.1** | using `.publish( )` in PySyft 0.6.0
@@ -64,7 +64,7 @@ To better understand these barriers, I integrated our online course platform int
 Participants progressed through the modules independently, submitting surveys and unmoderated screen recordings after each lesson. Because the features were in beta, we provided private Slack channels for bug support and accommodations such as language assistance. This setup allowed us to observe how users learned — and where they struggled — in realistic conditions.
 
 ***
-![Screenshot of project](/assets/images/portfolio/0-6-0/early_access_course_3.PNG)
+![Screenshot of project](/assets/images/portfolio/case-study-1/early_access_course_3.PNG)
 
 
 ***
@@ -88,7 +88,7 @@ We also discovered that our terminology created unintended misconceptions. The p
 These findings informed immediate changes across our teams, including updates to our “Introduction to Remote Data Science” course and redesigns of our demo materials — such as a “future state” DP metadata prototype (Figure 2.0) that clarified the metadata requirements for dataset uploads.
 
 ***
-![Screenshot of project](/assets/images/portfolio/0-7-0/DP_metadata_proto_min_max.PNG)
+![Screenshot of project](/assets/images/portfolio/case-study-1/DP_metadata_proto_min_max.PNG)
 
 {% bodys %}
 **Figure 2.0** | DP metadata prototype used to explain DP metadata upon dataset upload
