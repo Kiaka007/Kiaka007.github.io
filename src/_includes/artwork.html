@@ -1,0 +1,26 @@
+{% extends "gallery-base.html" %}
+
+    {% block content %}
+        <!--HERO ACCORDION BLOCKS-->
+        <section class="hero-block">
+            <div class="hero-content">
+                <article class="hero-copy">
+                    <div class="header-subheader">
+                        <h2>{{ title }}</h2>
+                        <h5 class="h6"> {{ medium }}, {{ year }}</h5>
+                    </div>
+                </article>
+                <div class="button-container-right">
+                    <div class="button">
+                        <h6 class="h6-alt button-icon" id="color-paper">←</h6>
+                        <a href="/gallery/"><h6 class="h6-alt" id="color-paper">Back</h6></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artwork-content">
+            {{ content | safe }}
+        </section>
+
+{% endblock %}

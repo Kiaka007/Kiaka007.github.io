@@ -1,0 +1,90 @@
+{% extends "portfolio-base.html" %}
+
+{% block content %}
+  <!--HERO-->
+  <section class="hero-block">
+    <div class="hero-content">
+      <article class="hero-copy">
+        <div class="header-subheader">
+          <h2>{{ title }}</h2>
+        </div>
+        <h3 class="b4">{{ subhead }}</h3>
+      </article>
+      <div class="button-container-left">
+                    <div class="button">
+                        <h6 class="h6-alt button-icon" id="color-paper">←</h6>
+                        <a href="/portfolio/"><h6 class="h6-alt" id="color-paper">Back</h6></a>
+                    </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--CONTENT-->
+  <div class="portfolio-main">
+  
+    <!--PORTFOLIO ASIDE-->
+    <aside class="portfolio-aside">
+      <!--TAGS ITEM-->
+      <div class="aside-block border-bottom">
+        <div class="tag-header">
+          <h6>Client/Product/Year</h6>
+          <div class="tag-cloud">
+              <div class="tag-container tag-text" id="olive-100">{{ client }}</div>
+              <div class="tag-container tag-text" id="olive-100">{{ product_1 }}</div>
+              {% if product_2 %}
+              <div class="tag-container tag-text" id="olive-100">{{ product_2 }}</div>
+              {% endif %}
+              <div class="tag-container tag-text" id="olive-100">{{ year }}</div>
+          </div>
+        </div>
+
+        <div class="tag-header">
+            <h6>Problem Space</h6>
+            <div class="tag-cloud">
+                <div class="tag-container tag-text" id="blue-100">{{ problem_space }}</div>
+            </div>
+        </div>
+
+        <div class="tag-header">
+            <h6>Method</h6>
+            <div class="tag-cloud">
+              <div class="tag-container tag-text" id="sakura-100">{{ method }}</div>
+            </div>
+        </div>
+
+        <div class="tag-header">
+            <h6>Role</h6>
+            <div class="tag-cloud">
+                <div class="tag-container tag-text" id="sakura-100">{{ role }}</div>
+            </div>
+        </div>
+      </div>
+
+      <!--TEXT ITEM-->
+      <div class="aside-block">
+        <div class="aside-text-item">
+            <h6>References</h6>
+            {% if references %}
+            <ol class="reference-list body-s b4">
+              {% for ref in references %}
+              <li>
+                <a href="{{ ref.url }}" target="_blank" rel="noopener">
+                {{ ref.label }}
+                </a>
+              </li>
+              {% endfor %}
+            </ol>
+            {% endif %}
+        </div>
+      </div> 
+    </aside>
+
+    <!--PORTFOLIO SECTION-->
+    <section class="portfolio-section border-left">
+      <article class="portfolio-article">
+        {{ content | safe }}
+      </article>
+    </section>
+
+  </div>
+{% endblock %}
