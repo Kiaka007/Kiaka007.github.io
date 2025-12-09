@@ -72,13 +72,13 @@ Based on the behavior exhibited from both components 1 & 2, I’d be interested 
 ![Gif of volunteers standing still while pedestrians pass them](/assets/images/gallery/Traffic-anim-1.gif)
 ![Gif of volunteers standing still while pedestrians pass them](/assets/images/gallery/traffic/Traffic-anim-2.gif)
 ***
-![Images taken as an initial survey of the space](/assets/images/gallery/traffic/initial-survey-1.png)
-![Images taken as an initial survey of the space](/assets/images/gallery/traffic/initial-survey-2.png)
-![Images taken as an initial survey of the space](/assets/images/gallery/traffic/initial-survey-3.png)
+![Images taken as an initial survey of the space](/assets/images/gallery/traffic/initial-survey-1.jpg)
+![Images taken as an initial survey of the space](/assets/images/gallery/traffic/initial-survey-2.jpg)
+![Images taken as an initial survey of the space](/assets/images/gallery/traffic/initial-survey-3.jpg)
 ***
-![Birdseye photo of the space](/assets/images/gallery/traffic/planning-birdseye-1.png)
-![Mapping the space from a birdseye view](/assets/images/gallery/traffic/planning-birdseye-2.png)
-![A Flow Diagram of the volunteer patterns](/assets/images/gallery/traffic/planning-birdseye-3.png)
+![Birdseye photo of the space](/assets/images/gallery/traffic/planning-birdseye-1.jpg)
+![Mapping the space from a birdseye view](/assets/images/gallery/traffic/planning-birdseye-2.jpg)
+![A Flow Diagram of the volunteer patterns](/assets/images/gallery/traffic/planning-birdseye-3.jpg)
 ***
 ![Scan of the instructions given to volunteers](/assets/images/gallery/traffic/instructions-1.PNG)
 {% endartworkcol %}

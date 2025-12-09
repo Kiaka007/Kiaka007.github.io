@@ -3,7 +3,7 @@ layout: wysiwyg.html
 title: "Gallery"
 subhead: "Recollection 2023"
 ---
-![Illustration titled Kintsugi](/assets/images/journal/kintsugi-2.png)
+![Illustration titled Kintsugi](/assets/images/journal/kintsugi-2.jpg)
 
 ##### Kintsugi
 *Ink on paper*

@@ -4,7 +4,7 @@ title: "Sidewalk Sounds"
 medium: "Performance Art, Sound Art"
 series: "Ongoing"
 year: 2014
-cover_image: "/assets/images/gallery/sidewalk_cover_1.PNG"
+cover_image: "/assets/images/gallery/sidewalk_cover_1.jpg"
 description: "Inspired by the site-specific sound installations of Max Neuhaus (1939–2009), Sidewalk Sound draws attention to the unnoticed rhythms embedded in everyday urban life. The performance isolates and amplifies a sound most pedestrians overlook—the percussive click of rolling objects crossing the grooves between concrete sidewalk squares. These seams, spaced roughly four to five feet apart, form an infrastructural metronome that quietly frames our movement through cities. Sidewalk Sound makes this latent meter audible."
 ---
 

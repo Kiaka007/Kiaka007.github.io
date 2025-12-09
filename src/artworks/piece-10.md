@@ -27,7 +27,7 @@ These narrative threads begin as distinctly separate in voice, time, and place, 
 ![Book Cover](/assets/images/gallery/pathways_cover_3.png)
 ![Internal Spread](/assets/images/gallery/pathways/pathways-spread-1.jpg)
 ![Internal Spread](/assets/images/gallery/pathways/pathways-spread-2.jpg)
-![Internal Spread](/assets/images/gallery/pathways/pathways-spread-3.png)
+![Internal Spread](/assets/images/gallery/pathways/pathways-spread-3.jpg)
 ![Internal Spread](/assets/images/gallery/pathways/pathways-spread-4.jpg)
 ![Internal Spread](/assets/images/gallery/pathways/pathways-spread-5.jpg)
 ![Internal Spread](/assets/images/gallery/pathways/pathways-spread-6.jpg)

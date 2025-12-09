@@ -115,6 +115,6 @@ This shaped our subsequent design direction: building interfaces, tools, and wor
 #### Next Steps
 This new focus on creating sandboxed experiences and more interactive interfaces led to:
 -  partner workshops centered around data stewardship  
-[(*see case study 2*)](/case-studies/case-study-3/)
+[(*see case study 2*)](/case-studies/case-study-2/)
 -  and the development of a differential privacy dashborad  
-[(*see case study 3*)](/case-studies/case-study-2/)
+[(*see case study 3*)](/case-studies/case-study-3/)

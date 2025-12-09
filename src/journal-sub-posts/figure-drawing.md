@@ -10,6 +10,6 @@ As a part of my artist recovery I decided to enroll in an 8 week live figure dra
 
 ***
 
-![drawing of man](/assets/images/journal/drawing-2.png)
+![drawing of man](/assets/images/journal/drawing-2.jpg)
 
-![Grid of six snapshots showing drawing progression](/assets/images/journal/drawing-1.png)
+![Grid of six snapshots showing drawing progression](/assets/images/journal/drawing-1.jpg)

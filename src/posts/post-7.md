@@ -2,7 +2,7 @@
 layout: post-olive.html
 title: "Bard’s Town Poetry Pop-Up"
 description: "Contributing to local book pop-up shop “Bard’s Town Books”, I along with two other Nashville-based poets, acted as featured speakers. Reading materials relating to the theme of “Tall Tales”, my work related to not only the idea of retelling a tall tale but also to the retracing the tale as an oral history and the use of tall tales to perpetuate stereotypical views of others."
-cover_image: "/assets/images/journal/bards-poster.png"
+cover_image: "/assets/images/journal/bards-poster.jpg"
 media: "Poetry"
 year: 2025
 post_tags:

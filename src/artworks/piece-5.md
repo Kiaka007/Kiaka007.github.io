@@ -37,9 +37,9 @@ Finally to tie everything together, every track begins to fade out in a stair-st
 
 {% endartworkcol %}
 {% artworkcol %}
-![Soundscape Track Layout](/assets/images/gallery/soundscape/soundscape-track-layout.png)
+![Soundscape Track Layout](/assets/images/gallery/soundscape/soundscape-track-layout.jpg)
 <audio controls>
-  <source src="/assets/images/gallery/soundscape/2014_soundscape-memory.wav" type="audio/wav">
+  <source src="/assets/images/gallery/soundscape/2014_soundscape-memory.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 {% endartworkcol %}

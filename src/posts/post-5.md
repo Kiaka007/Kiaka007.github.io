@@ -2,7 +2,7 @@
 layout: post-sakura.html
 title: "Re//Collection 2023"
 description: "Re//Collection 2023 is a zine, retrospecting my year in 2023. Cataloguing progression in my creative process, personal friend and family events, and the artists, music, and ideas I collected along the way, this zine was designed, written, printed, and bound by me then sent to those who really made an impact on my year."
-cover_image: "/assets/images/journal/recollection-cover.png"
+cover_image: "/assets/images/journal/recollection-cover.jpg"
 media: "Zine"
 year: 2023
 post_tags:
