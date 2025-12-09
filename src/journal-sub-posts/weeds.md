@@ -37,4 +37,4 @@ that call us — Weeds
 
 {% spacer %}{% endspacer %}
 
-![self-portrait](/assets/images/journal/weed.png)
+![self-portrait](/assets/images/journal/weed.PNG)

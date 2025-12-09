@@ -4,7 +4,7 @@ title: "Favorite Spaces"
 subhead: "Recollection 2023"
 ---
 
-![Illustration of village pub](/assets/images/journal/village-pub.png)
+![Illustration of village pub](/assets/images/journal/village-pub.PNG)
 
 ##### I. Village Pub
 *A cozy pub in Nashville with a nice porch,*  
@@ -14,7 +14,7 @@ A place recommended for it's laid back atmosphere. Once I went here I immediatel
 
 {% spacer %}{% endspacer %}
 
-![Illustration of green curtains](/assets/images/journal/green-room.png)
+![Illustration of green curtains](/assets/images/journal/green-room.PNG)
 
 ##### II. The Green Room
 *A really cool concert venue in Memphis,*  
@@ -24,7 +24,7 @@ One of my favorite Cindy adventures this year. Will and I made a trip down to Me
 
 {% spacer %}{% endspacer %}
 
-![Illustration cafe door](/assets/images/journal/ugly-mugs.png)
+![Illustration cafe door](/assets/images/journal/ugly-mugs.PNG)
 
 ##### III. Ugly Mugs
 *Café on the Eastside with a fun group of*  
@@ -34,7 +34,7 @@ Coffee, coffee, coffee, yes I am definitely a café hopper. Normally I rotate be
 
 {% spacer %}{% endspacer %}
 
-![Illustration of spray wall for bouldering](/assets/images/journal/climb.png)
+![Illustration of spray wall for bouldering](/assets/images/journal/climb.PNG)
 
 ##### IV. Climb East
 *Will & I's playground, full of technical*  
@@ -44,7 +44,7 @@ Will & I love bouldering to be sure. I love the puzzle aspect mixed with the und
 
 {% spacer %}{% endspacer %}
 
-![Illustration of red 1960's office chair](/assets/images/journal/office.png)
+![Illustration of red 1960's office chair](/assets/images/journal/office.PNG)
 
 ##### V. My Office
 *My creative sanctuary & sandbox,*  

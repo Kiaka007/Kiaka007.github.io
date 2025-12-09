@@ -4,7 +4,7 @@ title: "Book Collection"
 subhead: "Recollection 2023"
 ---
 
-![Illustration of two workers communicating via a computer](/assets/images/journal/licklider.png)
+![Illustration of two workers communicating via a computer](/assets/images/journal/licklider.PNG)
 
 {% bodys %} *"The Computer as a Communication Device”, Original Illustration by Roland B. Wilson* {% endbodys %}
 
@@ -40,7 +40,7 @@ society, and new angles by which to think. Blending a good pace of informational
 
 {% spacer %}{% endspacer %}
 
-![Illustration of kid with box on his head](/assets/images/journal/silverstein-1.png)
+![Illustration of kid with box on his head](/assets/images/journal/silverstein-1.PNG)
 
 {% bodys %} *“Where the Sidewalk Ends”, Original Illustration by Shel Silverstein* {% endbodys %}
 
@@ -60,7 +60,7 @@ able to use color well comes down to experiencing color in different contexts so
 
 {% spacer %}{% endspacer %}
 
-![Illustration of kid with box on his head](/assets/images/journal/silverstein-2.png)
+![Illustration of kid with box on his head](/assets/images/journal/silverstein-2.PNG)
 
 {% bodys %} *“Where the Sidewalk Ends”, Original Illustration by Shel Silverstein* {% endbodys %}
 
