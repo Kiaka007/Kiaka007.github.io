@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy as Participation, Prototyping a Differential Privacy Dashboard</title>
+  <title>Prototyping a Differential Privacy Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <!--Google Link for Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
@@ -42,7 +42,7 @@
     <div class="hero-content">
       <article class="hero-copy">
         <div class="header-subheader">
-          <h2>Privacy as Participation, Prototyping a Differential Privacy Dashboard</h2>
+          <h2>Prototyping a Differential Privacy Dashboard</h2>
         </div>
         <h3 class="b4">Promoting PETs Literacy through Play</h3>
       </article>
@@ -110,6 +110,12 @@
               </li>
               
               <li>
+                <a href="/case-studies/case-study-1/" target="_blank" rel="noopener">
+                Early Access User Study
+                </a>
+              </li>
+              
+              <li>
                 <a href="https://openmined.org/blog/a-survey-of-differential-privacy-frameworks/" target="_blank" rel="noopener">
                 Differential Privacy Overview
                 </a>
@@ -140,34 +146,34 @@
 </ul>
 <hr>
 <h4>Problem</h4>
-<p>Privacy-Enhancing Technologies (PETs) can protect data dynamically and contextually — but they’re often inaccessible to those without deep technical training. While working with OpenMined during our Early Access initiative, my team observed that static course materials could help overall Differential Privacy understanding but did not build confidence within non-technical users on utilizing Differential Privacy for their own data and use cases. What we realized was that in order to promote PETs literacy we should incorporate learning spaces that encourage simulation and play.</p>
+<p>Privacy-Enhancing Technologies (PETs) can protect data dynamically and contextually — but they’re often inaccessible to those without deep technical training. While working with OpenMined during our <a href="/case-studies/case-study-1/">Early Access initiative</a>, my team observed that static course materials could help overall Differential Privacy understanding but did not build confidence within non-technical users on utilizing Differential Privacy for their own data and use cases. What we realized was that in order to promote PETs literacy we should incorporate learning spaces that encourage simulation and play.</p>
 <hr>
 <h4>Approach</h4>
-<p>Collaborating with privacy experts, ML engineers, and data scientists, I led the design of an interactive Differential Privacy Dashboard that helps users simulate and see the trade-offs between data accuracy and privacy risk.</p>
-<p>Differential Privacy works by applying a random amount of noise — within certain limits — to a data result so that no individual’s contribution within the dataset can be singled out. The trade-off is that the more privacy you add the less precise the result becomes. This balance can be difficult to grasp for two reasons:</p>
+<p>Collaborating with privacy researchers and data scientists, I led the design of an interactive Differential Privacy Dashboard that helps Data Owners simulate and see the trade-offs between data accuracy and privacy risk.</p>
+<p>Differential Privacy works by applying a random amount of noise — within set limits — to a data result so that no individual’s contribution within the dataset can be singled out. The trade-off is that the more privacy you add the less accurate the result becomes. This balance can be difficult to grasp for two reasons:</p>
 <ul>
 <li>The randomness applied means that the same question can produce slightly different answers each time.</li>
 <li>The measure of privacy is not based on whether the question seems inherently intrusive or not; it is measured based on the individual’s within the dataset and how much their data points stand out.</li>
 </ul>
 <p>For example, imagine analyzing the average income in a small town. If someone with an unusually high income (say, a billionaire) lives there, their data could skew the result and reveal more than intended about that one individual. Differential Privacy protects against this by adding more noise to hide that individual’s contribution.</p>
-<p>To ground our work, we got permission to build off of Northwestern University’s ViP project, which already offered an elegant solution to visualizing DP’s randomness. Our contribution was to take the concept further and ask:</p>
+<p>To ground our work, we got permission to build off of Northwestern University’s <a href="https://priyakalot.github.io/ViP-demo/">ViP project</a>, which already offered an elegant solution for visualizing DP’s randomness. Our contribution was to take the concept further and ask:</p>
 <blockquote>
 <p>How might we help data owners understand the impact each data subject has on privacy risk — and how that risk changes as the dataset is used over time?</p>
 </blockquote>
 <hr>
 <h4>Outcomes</h4>
-<p>Using PySyft 0.7’s capabilities to manage privacy limits per user and per domain node, we designed a prototype that helps users explore:</p>
+<p>Using PySyft 0.7’s capabilities to manage privacy limits per Data Scientist and per domain node, we designed a prototype that helped Data Owners explore:</p>
 <ul>
 <li>How data accuracy shifts as privacy protection increases</li>
 <li>How individual contributions to data, influence the accuracy-privacy trade-off</li>
 <li>How these dynamics might unfold across multiple analyses made on the same dataset</li>
 </ul>
-<p>Drawing inspiration from our co-mapping sessions with Dementias Platform UK, we mocked up how this tool would apply to a data consortia use case. Turning abstract privacy concepts into a tangible experience that could help Data Owners build a sense of confidence and agency before making release decisions about their data.</p>
+<p>Drawing inspiration from our co-mapping sessions with Dementias Platform UK <a href="/case-studies/case-study-2/">(<em>see case study</em>)</a>, we mocked up how this tool would apply to a data consortia use case. The resulting prototype, turned abstract privacy concepts into a tangible experience that could help Data Owners build a sense of confidence and agency before making release decisions about their data.</p>
 <p>This work informed an international trade pilot with the UN PET Lab (<a href="https://unstats.un.org/bigdata/task-teams/privacy/guide/">2023 UN PET Guide</a>) and an <a href="https://openmined.org/blog/announcing-our-partnership-with-twitter-to-advance-algorithmic-transparency/">algorithmic transparency pilot</a> with Twitter.</p>
 <hr>
 <h4>Interface Breakdown</h4>
 <h5>01 Project Request and Review</h5>
-<p>In our data consortia scenario, a Data Scientist begins by exploring a dataset description and dictionary defined by the Data Owner. Using that information—and either provided or self-generated mock data— they submit a project request which contains a notebook containing queries that illustrate their research project and a written explanation concerning their research aim and methods.</p>
+<p>In our data consortia scenario, a Data Scientist begins by exploring a dataset description and dictionary defined by the Data Owner. Using that information along with provided mock data they submit a project request which contains: (1) a jupyter notebook housing their queries (2) a written explanation concerning their research aim and methods (3) profile information that details their affiliated org and role.</p>
 <p>When the Data Owner reviews a project request they first land on the Details tab (See Figure 1.0). Within this view, they can explore:</p>
 <ul>
 <li><strong>Project Context</strong>: The Data Scientist’s written explanation, affiliated organization and type (e.g. academic, NGO, private), and which data assets from the <strong>Domain Node</strong> are being queried.</li>
@@ -199,7 +205,7 @@
 <li><strong>Accuracy:</strong> shows how random noise applied by DP affects the accuracy of the answer. Using quantile dot plots to visualize the true answer against the range of possible answers the DP mechanism might produce.</li>
 <li><strong>Data Subjects</strong>: uses a histogram to highlight how many data subjects get dropped from a computation for privacy protection.</li>
 <li><strong>Acc/Subjects:</strong> Combines the <strong>Accuracy</strong> and <strong>Data Subjects</strong> views for quick comparisons.</li>
-<li><strong>Summary:</strong> translates risk and accuracy into plain language, describing how the current limit produces a range of answers within a percentage of risk.</li>
+<li><strong>Summary:</strong> translates risk and accuracy into plain language, describing how the current privacy limit produces a range of answers within a percentage of risk.</li>
 </ul>
 <p>These compact views allow quick comparisons across multiple queries and help the Data Owner grasp how the privacy limit set affects trade-offs across the entire submitted project.</p>
 <p><img src="/assets/images/portfolio/case-study-3/figure-3.png" alt="Compact views for the submitted query &quot;mean_age&quot;"></p>
@@ -214,11 +220,11 @@
 <p>This view (see <em>Figure 4</em>) incorporates the quantile dot plot concept from the ViP project, showing how differential privacy introduces randomness to the noise it applies on a result.</p>
 <ul>
 <li>The <strong>solid black line</strong> marks the true value of the query (e.g. 39.5).</li>
-<li>The <strong>dotted orange line</strong> shows the adjusted value after data subjects are removes (e.g. 38.4).</li>
+<li>The <strong>dotted orange line</strong> shows the adjusted value after data subjects are removed (e.g. 38.4).</li>
 <li>The <strong>dot distribution</strong> visualizes the range of possible results under the current privacy setting.</li>
 </ul>
 <p>Below, a flow line chart maps the spectrum between privacy and accuracy, helping reveal where gains plateau once certain data subjects are excluded.</p>
-<p>To the right, annotations list key metrics— true value, adjusted value, number of data points used, percentage dropped. tooltips within the chart reinforce these relationships.</p>
+<p>To the right, annotations list key metrics— true value, adjusted value, number of data points used, percentage dropped. Tooltips within the chart reinforce these relationships.</p>
 <p>At the bottom, the original query snippet and the Data Scientist’s “reason” for running it are displayed for context. These values were captured via PySyft’s Data Request method upon project submission.</p>
 <p><img src="/assets/images/portfolio/case-study-3/figure-4.PNG" alt="Expanded &quot;Accuracy&quot; view of the query &quot;mean_age&quot;"></p>
 <p class="body-s">
@@ -245,7 +251,7 @@
 <p>This chart shows how privacy exposure accumulates across all Data Scientists working on the same Domain Node (see Definitions). It reuses the data subject histogram chart, simulating cumulative exposure over time.</p>
 <p>If a privacy expert is available, a Global Limit can be enabled—capping how high any individual Data Owner on the node can set a Max User Limit. This ensures that overall privacy risk remains within acceptable bounds across an organization.</p>
 <h6>Risk Model</h6>
-<p>To make privacy risk more intuitive, we incorporated Lee-Clifton’s Risk Model, which maps the privacy parameter epsilon to a percentage of disclosure risk.</p>
+<p>To make privacy risk more intuitive, we re-incorporated Lee-Clifton’s Risk Model <a href="https://arxiv.org/pdf/2201.05964.pdf">(as used by the ViP project)</a>, which maps the privacy parameter epsilon to a percentage of disclosure risk.</p>
 <p>The model assumes that any information released about an individual can be discovered by others in the system. It plots:</p>
 <ul>
 <li><strong>X-axis</strong>: epsilon value (privacy limit)</li>
@@ -261,7 +267,7 @@
 <blockquote>
 <p>A picture is worth a thousand words.</p>
 </blockquote>
-<p>An interface opens the door to a thousand experiences. This dashboard demonstrated how complex privacy concepts could be made accessible through thoughtful interaction design. By transforming parameters like epsilon and sigma into tangible, visual experiences, we demonstrated how a sandbox approach to interface could bridge the gap between technical privacy and human understanding. I hope that this work along with work like the ViP project continue to expand the application of PETs and more specifically serve as precedents we can build off of in the spaces of PETs literacy and algorithmic literacy. Where agency is key to ethical use, but technical know-how blocks access.</p>
+<p>An interface opens the door to a thousand experiences. This dashboard demonstrated how complex privacy concepts could be made accessible through thoughtful interaction design. By transforming parameters like epsilon and sigma into tangible, repeatable experiences, we demonstrated how a sandbox approach to interface could bridge the gap between technical privacy and human understanding. I hope that this work along with work like the ViP project continue to expand the application of PETs and more specifically serve as precedents we can build off of in the spaces of PETs literacy and algorithmic literacy. Where agency is key to ethical use, but technical know-how blocks access.</p>
 
       </article>
     </section>
