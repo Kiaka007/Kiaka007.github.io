@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mapping a Decentralized Data Network for Research</title>
+  <title>Mapping a Federated Data Network with Decentralized Data Custody for Research</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <!--Google Link for Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
@@ -42,7 +42,7 @@
     <div class="hero-content">
       <article class="hero-copy">
         <div class="header-subheader">
-          <h2>Mapping a Decentralized Data Network for Research</h2>
+          <h2>Mapping a Federated Data Network with Decentralized Data Custody for Research</h2>
         </div>
         <h3 class="b4">Co-Mapping with Consortia and Stats Bureaus</h3>
       </article>
@@ -158,8 +158,20 @@
 <p><img src="/assets/images/portfolio/case-study-2/types-of-policies.PNG" alt="Image: Mapping session on new policy types in PySyft 0.7.0"></p>
 <p class="body-s"><em>(Image: Mapping session on new policy types in PySyft 0.7.0)</em></p>
 <hr>
-<p><img src="/assets/images/portfolio/case-study-2/request_components.PNG" alt="mage: Mapping request components in PySyft 0.7.0)"></p>
+<p><img src="/assets/images/portfolio/case-study-2/request_components.PNG" alt="Image: Mapping request components in PySyft 0.7.0)"></p>
 <p class="body-s"><em>(Image: Mapping request components in PySyft 0.7.0)</em></p>
+<hr>
+<h4>Federated Networks with Decentralized Data Custody, a Mixed-Model</h4>
+<p>Although PyGrid was intended to run on a purely decentralized network setup, we realized through our discussions with DPUK and the U.S. Census Bureau that there were many government and academic use cases where a coordination layer would better reflect their internal norms and would help embedd trust via different checkpoints of verification. To maintain our system's focus on agency, while still allowing for these use cases we created a hybrid system— decentralized data custody with a new node type specifically designed for coordination.</p>
+<p>Upon launching a PyGrid node, users could select a &quot;node type&quot;, either &quot;domain node&quot; or &quot; network node&quot;. Network nodes acted as gateway servers to other domain nodes. They were lighter weight nodes that allowed for user account creation but did not allow for dataset storage or upload. Domain nodes acted as the primary data sites and could subscribe to/ connect to network nodes in order to pass review decisions to network node members and/or inorder to make their dataset listings discoverable by network node members. Meanwhile, domain nodes in this new setup could remain autonomous. They stored research datasets, allowed for user account creation, and could connect peer to peer to other domain nodes without the need for a network node. In essence, domain nodes could do all actions while network nodes could do a subset of actions optimized for node to node connection and user management flows.</p>
+<p>This delineation although minor in node architecture, allowed us to use nodes as a stand-in for &quot;actors&quot; within different information flows. With &quot;node permissions&quot; domain node owners could define what parameters informed their relationship with network nodes and vice versa. As in the case of DPUK, they could launch a network node to help with dataset discovery and user management, while their different cohorts could launch domain nodes and through a combination of &quot;node permissions&quot; and &quot;dataset permissions&quot; could decide which datasets then get listed under DPUK's platform.</p>
+<hr>
+<p><img src="/assets/images/portfolio/case-study-2/fdn-network-premise.jpg" alt="Image: Mapping FDN in PyGrid 0.7.0)"></p>
+<p class="body-s"><em>(Image: Mapping FDN network flow in PyGrid 0.7.0, a single domain node can connect to multiple networks.)</em></p>
+<hr>
+<p><img src="/assets/images/portfolio/case-study-2/fdn-network-premise-2.jpg" alt="Image: Mapping FDN in PyGrid 0.7.0)"></p>
+<p class="body-s"><em>(Image: Mapping FDN network flow in PyGrid 0.7.0, if given permission, network nodes can help triage requests made to domains.)</em></p>
+<hr>
 <h4>The Broader Picture</h4>
 <p>Ultimately, this research reframed how PyGrid approached decentralization— not as a purely technical goal, but as a social architecture of trust. Combining learnings from our <a href="/case-studies/case-study-1/">Early Access research initiative</a>, we reframed our adoption strategy. If PETs literacy required experimentation then trust required collaborative sense-making. We evolved our partner relationships from that of being service-providers to that of being co-creators, our product from being a platform to being infrastructure, and our pilot efforts from being research-level feats to being deployments of different sandbox spaces so that those in the academic, NGO, or statistic bureau communities could learn, build, and push their own visions of the future for data collaboration. Some examples of pilots informed by this work are:</p>
 <ul>
@@ -169,8 +181,6 @@
 </ul>
 <p><img src="/assets/images/portfolio/case-study-2/fdn-un-pet-lab-pilot.jpg" alt="Image: UN PET Lab Pilot network map"></p>
 <p class="body-s"><em>(Image: UN PET Lab Pilot network map)</em></p>
-<p><img src="/assets/images/portfolio/case-study-2/alg_trans_map.jpg" alt="Image: Proposal for algorithmic transparency pilot node setup"></p>
-<p class="body-s"><em>(Image: Proposal for algorithmic transparency pilot node setup)</em></p>
       </article>
     </section>
 
