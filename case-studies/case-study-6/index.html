@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information-Centered Design in the Age of AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <!--Google Link for Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/script.js" defer></script>
+</head>
+<body style="background-color: var(--paper-gray);">
+    <header>
+        <nav class="nav">
+            <div id="nav-logo">
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="84" viewBox="0 0 48 102" fill="none">
+                    <g clip-path="url(#clip0_69_79)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L48 0L48 101.486H0L0 0ZM24.9498 41.8215L24.9498 99.5862H46.0976L46.0976 41.8215H24.9498ZM46.0976 39.9219V1.9024L1.90239 1.9024V39.9219H46.0976ZM23.0502 41.8215H1.90239L1.90239 99.5862H23.0502L23.0502 41.8215ZM34.0529 51.7396H31.5287V49.8996H39.5841V51.7396H36.3471L39.5841 54.6726V56.6886L36.2109 53.7186L31.5287 56.6091V54.4455L34.7713 52.4011L34.0529 51.7396ZM31.5287 60.0476V61.9074H34.5668L39.5841 64.5338V62.6371L36.2591 60.9988L39.5841 59.2923V57.2536L34.5413 60.0476H31.5287ZM35.677 72.9583C32.9172 72.9583 31.3981 71.5812 31.3981 69.0826C31.3981 66.6606 32.8632 65.326 35.5237 65.3374C38.1161 65.3374 39.726 66.8451 39.726 69.2671C39.726 71.5755 38.2126 72.9583 35.677 72.9583ZM35.5805 71.0531C37.2841 71.0531 38.136 70.4398 38.136 69.2245C38.136 67.9212 37.2756 67.2313 35.5578 67.2313C33.84 67.2313 32.9881 67.8815 32.9881 69.1479C32.9881 70.4142 33.8769 71.0531 35.5805 71.0531ZM34.0529 76.9221L34.7713 77.5837L31.5287 79.6281V81.7917L36.2109 78.9012L39.5841 81.8712V79.8552L36.3471 76.9221H39.5841V75.0822H31.5287V76.9221H34.0529ZM35.677 90.1055C32.9172 90.1055 31.3981 88.7283 31.3981 86.2297C31.3981 83.8077 32.8632 82.476 35.5237 82.4845C38.1161 82.4845 39.726 83.9894 39.726 86.4142C39.726 88.7227 38.2126 90.1055 35.677 90.1055ZM35.5805 88.2031C37.2841 88.2031 38.136 87.5869 38.136 86.3717C38.136 85.0684 37.2756 84.3784 35.5578 84.3784C33.84 84.3784 32.9881 85.0286 32.9881 86.295C32.9881 87.5614 33.8769 88.2031 35.5805 88.2031ZM11.6273 51.7481V54.8742H13.172V51.7481H14.8501V55.0702H16.4259V49.8996H8.37055V55.2661H9.95778V51.7481H11.6273ZM16.4259 59.4769L11.0992 62.322H16.4259V64.0199H8.37055V61.9443L13.6831 59.0425H8.37055L8.37055 57.336H16.4259V59.4769ZM11.244 69.6164V71.0531H11.0481C10.2673 71.0531 9.76187 70.4568 9.76187 69.5283C9.76187 68.2109 10.5825 67.6231 12.4195 67.6231C13.6036 67.6231 15.0119 67.9638 15.0119 69.5823C15.0119 70.4994 14.5519 70.9736 13.5667 71.0758H13.4786L13.649 72.8135H13.7342C15.5883 72.6801 16.5736 71.5756 16.5736 69.6135C16.5736 67.166 14.9665 65.7065 12.2747 65.7065C9.67669 65.7065 8.24563 66.9218 8.24563 69.1337C8.24563 70.1076 8.60907 70.9452 9.1883 71.3456L8.37624 71.5017V72.8788H12.6467V69.6135L11.244 69.6164ZM36.949 28.1299L35.606 29.4757L24.9611 18.828L24.9611 30.373H23.0587L23.0587 18.916L12.3684 29.6063L11.0254 28.2605L21.7583 17.5276L11.0452 17.5276V15.628H23.0587V9.68514H24.9611V15.628L36.9746 15.628V17.5276H26.3467L36.949 28.1299Z" fill="var(--color-bronze)"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_69_79">
+                    <rect width="101.486" height="48" fill="white" transform="matrix(0 1 -1 0 48 0)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>
+                </div>
+            <div id="nav-items">
+                <h6 class="current-page"><a href="/portfolio/">Portfolio</a></h6>
+                <h6><a href="/gallery/">Gallery</a></h6>
+                <h6><a href="/journal/">Journal</a></h6>
+                <h6><a href="/about/">About</a></h6>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+  <!--HERO-->
+  <section class="hero-block">
+    <div class="hero-content">
+      <article class="hero-copy">
+        <div class="header-subheader">
+          <h2>Information-Centered Design in the Age of AI</h2>
+        </div>
+        <h3 class="b4">Using Information Flows and Socio-Technical Frameworks to Rethink Product Practice</h3>
+      </article>
+      <div class="button-container-left">
+                    <a href="/portfolio/" class="button">
+                        <h6 class="h6-alt button-icon" id="color-paper">←</h6>
+                        <h6 class="h6-alt" id="color-paper">Back</h6>
+                    </a>
+      </div>
+    </div>
+  </section>
+  
+  <!--CONTENT-->
+  <div class="portfolio-main">
+  
+    <!--PORTFOLIO ASIDE-->
+    <aside class="portfolio-aside">
+      <!--TAGS ITEM-->
+      <div class="aside-block border-bottom">
+        <div class="tag-header">
+          <h6>Client/Product/Year</h6>
+          <div class="tag-cloud">
+              <div class="tag-container tag-text" id="olive-100">OpenMined</div>
+              <div class="tag-container tag-text" id="olive-100">Syft 0.8 - 0.9</div>
+              
+              <div class="tag-container tag-text" id="olive-100">PyGrid</div>
+              
+              <div class="tag-container tag-text" id="olive-100">2024</div>
+          </div>
+        </div>
+
+        <div class="tag-header">
+            <h6>Problem Space</h6>
+            <div class="tag-cloud">
+                <div class="tag-container tag-text" id="blue-100">Encoding Context</div>
+            </div>
+        </div>
+
+        <div class="tag-header">
+            <h6>Method</h6>
+            <div class="tag-cloud">
+              <div class="tag-container tag-text" id="sakura-100">Co-Mapping</div>
+            </div>
+        </div>
+
+        <div class="tag-header">
+            <h6>Role</h6>
+            <div class="tag-cloud">
+                <div class="tag-container tag-text" id="sakura-100">Product Lead</div>
+            </div>
+        </div>
+      </div>
+
+      <!--TEXT ITEM-->
+      <div class="aside-block">
+        <div class="aside-text-item">
+            <h6>References</h6>
+            
+            <ol class="reference-list body-s b4">
+              
+              <li>
+                <a href="https://openmined.org" target="_blank" rel="noopener">
+                OpenMined Website
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://nissenbaum.tech.cornell.edu/papers/Contextual%20Approach%20to%20Privacy%20Online.pdf" target="_blank" rel="noopener">
+                &#39;A Contextual Approach to Privacy Online&#39;, Helen Nissenbaum
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.ideo.com/journal/design-kit-the-human-centered-design-toolkit" target="_blank" rel="noopener">
+                IDEO&#39;s Human-Centered Design Toolkit
+                </a>
+              </li>
+              
+            </ol>
+            
+        </div>
+      </div> 
+    </aside>
+
+    <!--PORTFOLIO SECTION-->
+    <section class="portfolio-section border-left">
+      <article class="portfolio-article">
+        <h4>Summary</h4>
+<p>As design lead on OpenMined’s decentralized PET stack (PySyft, PyGrid, PyGrid Admin), I started treating information flows—not interfaces or isolated features—as my primary design material.</p>
+<p>Across my time at OpenMined I had been working on AI evaluation and cross-institutional research use cases. These use cases by their very nature forced me to view data as a focal point for my designs. By designing with this focal point I began to realize that focusing on the data level (micro) and the information flow (macro) could be a new avenue for design in the age of AI. I began to ask:</p>
+<blockquote>
+<p>What happens if we design from the flow of information and its social context first, and treat UI, APIs, and protocols as ways to shape those flows?</p>
+</blockquote>
+<p>To probe that question, I:</p>
+<ul>
+<li>Mapped how data, models, and decisions move between institutions and roles, not just within a single product.</li>
+<li>Turned these mappings into <strong>socio-technical frameworks</strong> (impact ladders, logic models, role maps, system evolution diagrams, capability “skill trees”).</li>
+<li>Used those frameworks to redesign our PET stack as a <strong>protocol for collaboration and oversight</strong>, rather than a standalone product.</li>
+</ul>
+<p>I don’t claim this “solves” AI design problems. Instead, I see it as an early example of <em>information-centered design:</em> a practice that could help future product designers reason about AI systems whose behavior extends not just to the screen that mediates them but to the tools that shape the data that feeds them.</p>
+<hr>
+<h4>Why information flows became my main design material</h4>
+<p>At OpenMined we created tools for privacy-enhancing technologies (PETs). Our particular focus was on secure enclaves, secure multi-party computation, differential privacy, and remote execution. These tools are often described as a means to “make it safe to share data.” In practice, I kept seeing something subtler:</p>
+<blockquote>
+<p>Organizations weren’t just struggling with <em>data access</em>; they were struggling with who gets to ask what, about whom, under what conditions, and with what visibility.</p>
+</blockquote>
+<p>AI model evaluation, in particular, exposed a gap: PETs could protect data, but they didn’t tell us how questions, models, and accountability should move between labs, regulators, and the public. I realized that many of our hardest product questions were actually questions about information flows:</p>
+<ul>
+<li>Who originates data? Who transforms it? Who consumes the resulting insights?</li>
+<li>What expectations travel with that data as it moves?</li>
+<li>When do those expectations get lost or violated?</li>
+</ul>
+<p>As product lead on PyGrid and design lead across tools, I began to treat those flows as the thing to design around. Interfaces, protocols, permission models, and even education efforts became <em>means</em> to shape information flows and their governance, not ends in themselves. That shift is what I think most product designers will need in the age of AI.</p>
+<hr>
+<h4>Expanding design's scope for context</h4>
+<p>In more traditional interaction design, “context” often refers to the device (phone, laptop) or physical and social setting (hospital, kitchen) in which a user encounters a product. These framings are well suited to bounded interactions, where the primary design challenge is shaping a moment of use.</p>
+<p>In AI systems, however, context begins to look different. Because AI systems operate by transforming and recombining information over time, context can no longer be understood solely at the interface. It must also include the lifecycle of information itself—how data is collected, transformed, interpreted, and acted upon as it moves across people, institutions, and technical systems:</p>
+<ul>
+<li>Who collected the data, and under what promises?</li>
+<li>Who transformed it and how (e.g. into models, metrics, or dashboards)?</li>
+<li>Who relies on those outputs, and who is affected but not represented?</li>
+<li>How do these relationships shift as systems evolve?</li>
+</ul>
+<p>This distinction became clear to me when comparing two forms of governance work. In a UN PET Lab pilot on international trade data, I was working primarily with static tabular datasets. The core design challenge was embedding norms and constraints into a fixed data object—defining what could be accessed, by whom, and under what conditions.</p>
+<p>AI evaluation, by contrast, exposed a fundamentally different kind of context. Even when evaluation datasets remained static, the systems under scrutiny were not:</p>
+<ul>
+<li>Models would be updated, fine-tuned, and redeployed.</li>
+<li>Evaluation criteria and threat models evolved.</li>
+<li>Stakeholders (e.g. labs, regulators, and civil-society groups) would need to enter and exit the process.</li>
+</ul>
+<p>In this setting, designing for “context” meant treating model behavior over time, and the evolving flows of questions, evidence, and accountability around those models, as the primary design objects. Interfaces were no longer just points of access; they became sites where informational relationships had to be surfaced, interpreted, and contested. This reframing led me to ask:</p>
+<ul>
+<li><em>How might information flows be made visible and negotiable to the people who depend on them?</em></li>
+<li><em>What kinds of protocol and UI affordances are needed if ongoing AI evaluation becomes the central design challenge?</em></li>
+</ul>
+<p>The remainder of this case study describes the socio-technical frameworks I adapted in response to these questions, and how they point toward a broader conception of design practice grounded in informational context.</p>
+<hr>
+<h3>Socio-technical frameworks for designing with information flows</h3>
+<h4>01 Impact Ladder: From abstract vision to concrete flows</h4>
+<p>I started design work every quarter by aligning myself and leadership on the founder’s (Andrew Trask’s) long-term vision:</p>
+<blockquote>
+<p>“A world where every good question is answered, and nothing else.”</p>
+</blockquote>
+<p>This vision was intentionally broad and crafted to steer general organization alignment and marketing. To make it actionable, I then led <strong>impact ladder</strong> workshops, specifically I adapted <a href="https://www.ideo.com/journal/design-kit-the-human-centered-design-toolkit">IDEO’s human-centered design toolkit</a>, and broke down this larger vision into smaller impacts that served as rungs by which we could build to the larger vision.</p>
+<hr>
+<p><img src="/assets/images/portfolio/case-study-6/23q4-impact-ladder.jpg" alt="Image of Impact ladder diagram"></p>
+<p class="body-s"><strong>Image:</strong> <em>Impact ladder to kick off OpenMined work at the end of 2023</em></p>
+<hr>
+<p>This ladder forced us to specify: (1) which <strong>information relationships</strong> we were actually trying to change (e.g., between model owners and external auditors) and (2) what <strong>flows</strong> would indicate progress (e.g., more audits conducted under safe constraints, more cross-org research on sensitive data).</p>
+<p>For future design efforts, it formulated design challenges at the org’s mission level instead of the feature level. For example, instead of beginning design efforts with “How might we showcase model distinctions in a model card (<em>a feature level inquiry</em>)?”, design efforts with our teams first explored top-level questions such as “How can the current (privacy, security, &amp; IP) risk in AI auditing be mitigated?”. This provided a clearer lens around <em>who</em> to conduct qualitative studies with and what literary research was necessary to begin with before diving into code.</p>
+<h5>Future Application</h5>
+<p>For future design, a generalizable question here that this form of impact ladder works towards mitigating is:</p>
+<blockquote>
+<p>If the product vision changes, could we as a product team articulate how information would need to move differently between people, systems, and institutions to make that vision real?</p>
+</blockquote>
+<blockquote>
+<p>As a product team can we articulate how our defined design challenges tie to the org's social impact?</p>
+</blockquote>
+<hr>
+<h4>02 Logic Model: Tying design challenges to paradigm shifts</h4>
+<p>Taking the lowest run within the impact ladder, I would then adapt a <strong>logic model</strong> to make impact operational. Instead of a typical chain that specifies <em>Impact → Outcomes → Outputs → Inputs</em>, I used a socio-technical framing that described <strong>desired paradigm shifts</strong> (e.g., model owners seeing audits as safe, not as automatic IP risk) as explicit outcomes and listed outputs as <strong>proof points and failure modes</strong>, as opposed to more traditional engagement metrics.</p>
+<p>For example, if we take the design challenge:</p>
+<blockquote>
+<p><em>“How can the current (privacy, security, &amp; IP) risk in AI auditing be mitigated?”</em></p>
+</blockquote>
+<p>Proof points might include:</p>
+<blockquote>
+<p><em>“# of successful AI audit pilots with main AI labs where the pilots prove progressive levels of safety. For example: evaluation on sample model, legacy model, or reproducing a previous result.”</em></p>
+</blockquote>
+<p>Through iteration, my logic models took the form of: Social Impact → Top Design Challenge → Intermediate Challenges → Starter Challenges → Proof Points → Product Focuses.</p>
+<p><img src="/assets/images/portfolio/case-study-6/logic-model-zoom-2.JPG" alt="Zoomed in image of Logic Model"></p>
+<p class="body-s"><strong>Image:</strong> <em>Zoomed in slice of 2023 logic model, highlighting paradigm shifts tied proof points and product builds.</em></p>
+<p>By linking our top-level design challenges to actor paradigm shifts and more socially focused proof-points, I found logic models to be one of the most effective methods for bridging our organization's social aspirations with the more concrete efforts being proposed by our partner, education, and engineering teams. From these quarterly logic models, our teams were able to see how our builds contributed to the larger picture and organizationally we began to see opportunities around how we could spend efforts towards non-conventional initiatives such as PET’s education in government policy spaces.</p>
+<h5>Future Application</h5>
+<p>For future product designers, this kind of framing could be a way to ask:</p>
+<blockquote>
+<p>Which paradigms shifts can be supported through the capabilities of our product? Which lie outside of our domain (e.g. spaces such as legal and policy)? Are there bridges of understanding that need to be made in between?</p>
+</blockquote>
+<hr>
+<h4>03 Role Mapping: From legal/privacy concepts to product roles</h4>
+<p>Moving beyond top-level planning, I then began to transition learnings from our qualitative studies into more concrete product principles. One discovery made through partner workshops was a mismatch between our platform roles and their day to day roles.</p>
+<p>Our roles (e.g. data subject, data owner, data scientist) were based on a data science context and in doing so assumed neat distinctions between owning and analyzing data. In practice, many actors both owned and analyzed data, switching roles based on context.</p>
+<p>While it was important to frame a participant’s relationship to data internally, externally across our tools it became increasingly apparent that we needed to empower communities by giving them the controls to encode their own understood roles within the system.</p>
+<p>Through role-mapping sessions with leadership, we refined our <em>internal</em> product roles to better reflect a user’s <em>relationship</em> to the data (e.g. data subjects, data stewards, collectives, service providers, etc.) which helped us when discussing PETs capabilities and features. However for our system’s <em>external</em> roles, I proposed a more agnostic, participation-focused role system: owners, admins, moderators/stakeholders, contributors, subscribers, each defined by how they <em>participate</em> in the system and how they intend to participate with the data.</p>
+<hr>
+<p><img src="/assets/images/portfolio/case-study-6/role-mapping-zoom.JPG" alt="Zoomed in image of Role-Mapping Diagram"></p>
+<p class="body-s"><strong>Image:</strong> <em>Zoomed in slice of role-mapping diagram which defined differences between internal privacy-based roles and external system participation roles.</em></p>
+<hr>
+<p>This exercise of refining internal roles based on our privacy theories versus defining external agnostic roles based on system participation raised questions such as:</p>
+<ul>
+<li><em>What is the smallest set of participation patterns that still lets different communities encode their own norms?</em></li>
+<li><em>How can we design roles so that people can see themselves (as subjects, stewards, auditors, etc.) without hardcoding one governance regime?</em></li>
+</ul>
+<hr>
+<h5>Future Application</h5>
+<p>For future designers working in AI, this suggests a pattern:</p>
+<blockquote>
+<p>As our communication loops become more dynamic, as information transitions to a more real-time state, how can we design permission models and role systems that allow for shifts based on context?</p>
+</blockquote>
+<hr>
+<h4>04 System Evolution &amp; Capability Tree: Exploring future architectures</h4>
+<p>Continuing work from the more abstract to the more concrete, I began translating proof points into future state system-level maps and skill tree diagrams. The system-level maps were structured with the data owner at one end and the data analyzer at the other. Formed in seven levels, each map charted how a remote interaction between the two could possibly be supported with a combination of PETs and governance features. With each progressive level the nuance and depth behind what rulesets could be enforced around data use as well as what types of questions could be asked deepened. These system maps acted, as a base by which to build pilot proposals off of, as each level corresponded to a pilot proof point.</p>
+<hr>
+<p><img src="/assets/images/portfolio/case-study-6/system-zoom.JPG" alt="Zoomed in image of systems diagrams"></p>
+<p class="body-s"><strong>Image:</strong> <em>Zoomed in slice of system-level maps where each level indicated new modes of enforcing privacy expectations and new depths to  remote data query.</em></p>
+<hr>
+<p>While system-level maps helped us visualize and iterate our ideas around how to test general governance flows for pilots, skill tree diagrams helped us plot and iterate on feature builds for our product releases. Incorporating elements common to RPG games such as themed clusters, nodes, and unlock dependencies; the skill tree I built and iterated with engineering on for OpenMined clustered tool capabilities around pillars of PET primitives and structured transparency (e.g. input/output privacy, input/output verification, flow governance) and tied them to our main system objects (nodes, data subjects, datasets, models, users, methods/functions).</p>
+<hr>
+<p><img src="/assets/images/portfolio/case-study-6/23q4-skilltree.jpg" alt="Image of skill tree"></p>
+<p class="body-s"><strong>Image:</strong> <em>Full view of our tech skill tree which mapped technical capabilities to governance features.</em></p>
+<hr>
+<p><img src="/assets/images/portfolio/case-study-6/skill-tree-zoom-2.JPG" alt="Image of skill tree"></p>
+<p class="body-s"><strong>Image:</strong> <em>Skill tree &quot;key&quot;, node colorization, cluster, and icon were tied to PETs and structured transparency primitives.</em></p>
+<hr>
+<p>By viewing which features supported which pillars of structured transparency and by viewing how capabilities tied to system objects, we were better able to visualize how our API logic and tooling may support, leave gaps, or affect data agency and context. For example, brainstorming what might need to be explored to support two organizations in jointly answering a question about a model under strict privacy constraints, we were able to see through the skill tree that we had not yet supported a form of input privacy and therefore had no feature-set to test semi-trust collaborations across joins.</p>
+<hr>
+<p><img src="/assets/images/portfolio/case-study-6/skill-tree-zoom.JPG" alt="Image of skill tree"></p>
+<p class="body-s"><strong>Image:</strong> <em>Zoomed in section of skill tree that shows how input privacy capabilities link to project objects.</em></p>
+<hr>
+<p>Ultimately, using these tools in combination helped our teams ask:</p>
+<ul>
+<li><em>What kinds of information flows are conceivable if we combine PETs in certain ways?</em></li>
+<li><em>Which capabilities are prerequisites for more ambitious governance scenarios?</em></li>
+</ul>
+<hr>
+<h5>Future Application</h5>
+<p>For design, this could suggest another transferable practice:</p>
+<blockquote>
+<p>How might you treat your technical stack as a capability space and explicitly map: primitives → possible flows → governance possibilities?</p>
+</blockquote>
+<blockquote>
+<p>What kinds of diagrams would help your team envision the futures your system is testing against or building towards?</p>
+</blockquote>
+<hr>
+<h4>How this changed what we built</h4>
+<p>These frameworks were not just static diagrams or slides; they were negotiable and iterative artifacts that concretely shaped how we thought about building. Our logic model combined with our skill tree helped us see that we needed to build a space for context if we were to support AI evaluation use cases. We shifted focus from one-to-one data collaborations (a single researcher, a single static dataset) toward <strong>project spaces</strong> where multiple organizations could join data, models, and context for AI auditing. We began to design collaboration workflows where: model owners could define sandbox conditions, data owners could express constraints on how their data is joined or queried, and auditors and regulators had clear, bounded ways to probe models under PET constraints.</p>
+<p>Throughout the process from planning to execution these artifacts oriented us with guiding questions:</p>
+<ul>
+<li><em>What information flows are we enabling or blocking here?</em></li>
+<li><em>Whose perspective is visible in this flow, and who is invisible?</em></li>
+<li><em>Which combinations of PETs meaningfully change those flows, and which are fragmented feature sets?</em></li>
+</ul>
+<p>Every time my team would hit these questions we would then pull up one of these artifacts and talk through how we might move forward. This practice kept my team not only mission aligned, but also kept us nimble going between micro and macro thinking— to continually question how our decisions at the interface or API level matched up to the bigger picture of social impact (in this case increased AI evaluation).</p>
+<hr>
+<h4>What this suggests for future product designers</h4>
+<p>Looking back, I see my time as a design lead at OpenMined less as “a series of designs I led” and more as an early experiment into what product design might become in the age of AI. Although our work was primarily centered on AI evaluation, I believe these adapted methods with an information-centered frame could benefit and perhaps if developed further fundamentally change design's role in AI product influence.</p>
+<p>Instead of ending with prescriptive advice, I find it more honest to frame what I learned as questions I think other designers might also benefit from asking:</p>
+<ol>
+<li><strong>Designing from information flows, not just user journeys.</strong>
+<ul>
+<li><em>What are the key information flows in and around your product, and how would your design change if you treated those flows—not screens or tasks—as your primary canvas?</em></li>
+<li><em>Where in those flows are expectations created, preserved, broken, or lost?</em></li>
+</ul>
+</li>
+<li><strong>Using socio-technical frameworks as design tools.</strong>
+<ul>
+<li><em>What impact ladders, logic models, role maps, or capability diagrams would make your assumptions about people, power, and information explicit enough to critique?</em></li>
+<li><em>How might you keep those artifacts alive as part of the design process, rather than filing them away as strategy documents?</em></li>
+<li><em>Where do tears between big picture strategy and nuanced technical decisions occur? How can the tools we have as designers bridge those gaps internally?</em></li>
+</ul>
+</li>
+<li><strong>Starting from roles in relation to information.</strong>
+<ul>
+<li><em>What is the main object being interacted with in your product, system, ecosystem?</em></li>
+<li><em>How would your description of roles change when describing a participant’s: interaction with that object, agency towards that object, impact by that object?</em></li>
+</ul>
+</li>
+<li><strong>Measuring proof points and failure modes, not just engagement.</strong>
+<ul>
+<li><em>Beyond clicks and adoption, what would count as a proof point that your system is delivering on its product promise/contributing toward the org mission?</em></li>
+<li><em>How might your product or system create negative or the exact opposite effects than intended? (Failure Modes)</em></li>
+<li><em>How might those proof points or failure modes change the way you design features and prioritize work?</em></li>
+<li><em>What might you need to learn from communities to test against those proof points?</em></li>
+<li><em>How might you check-in with communities to test against those failure modes?</em></li>
+</ul>
+</li>
+<li><strong>Using interfaces and protocol design as hypotheses.</strong>
+<ul>
+<li><em>What implicit theory about people and institutions is baked into your current roles, flows, and policies?</em></li>
+<li><em>How might you design your product so that you can tell when that theory is wrong and iterate on it?</em></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4>Questions I’d like to pursue</h4>
+<p>The time I spent at OpenMined left me with questions that I think could benefit from academic exploration. Specifically, I’m curious about furthering:</p>
+<ul>
+<li>
+<p><strong>Pedagogy:</strong></p>
+<p>How might we further develop and teach <em>information-centered design</em> as a core skill for product designers, alongside interaction and visual design?</p>
+</li>
+<li>
+<p><strong>Methodology:</strong></p>
+<p>What combinations of mapping and prototyping best reveal hidden assumptions about power and information dynamics in AI products? How can the role of a designer in these products help track performance to social impact using these tools?</p>
+</li>
+<li>
+<p><strong>Governance &amp; standards:</strong></p>
+<p>When should internal design frameworks evolve into shared standards or regulatory tools, and when are they more useful as experimental artifacts?</p>
+</li>
+<li>
+<p><strong>Tools &amp; infrastructure:</strong></p>
+<p>How might future information-centered design support new substrates for agency, particularly through bridging semantic AI and local-first computing?</p>
+</li>
+</ul>
+<p>My work at OpenMined has been one attempt to answer these questions in the context of AI auditing and PETs. I see this as a starting point for a broader research agenda on how product designers can responsibly shape the information flows that AI systems depend on, and how we might empower the next generation of designers to question, inform, and build for the communities those systems impact.</p>
+
+      </article>
+    </section>
+
+  </div>
+
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/ke.design____/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" id="instagram" width="21" height="21" viewBox="0 0 26 26" fill="none">
+            <path d="M13 7C11.8133 7 10.6533 7.35189 9.66658 8.01118C8.67988 8.67047 7.91085 9.60754 7.45672 10.7039C7.0026 11.8003 6.88378 13.0067 7.11529 14.1705C7.3468 15.3344 7.91824 16.4035 8.75736 17.2426C9.59647 18.0818 10.6656 18.6532 11.8295 18.8847C12.9933 19.1162 14.1997 18.9974 15.2961 18.5433C16.3925 18.0892 17.3295 17.3201 17.9888 16.3334C18.6481 15.3467 19 14.1867 19 13C18.9983 11.4092 18.3657 9.88405 17.2408 8.75919C16.116 7.63433 14.5908 7.00165 13 7ZM13 17C12.2089 17 11.4355 16.7654 10.7777 16.3259C10.1199 15.8864 9.60723 15.2616 9.30448 14.5307C9.00173 13.7998 8.92252 12.9956 9.07686 12.2196C9.2312 11.4437 9.61216 10.731 10.1716 10.1716C10.731 9.61216 11.4437 9.2312 12.2196 9.07686C12.9956 8.92252 13.7998 9.00173 14.5307 9.30448C15.2616 9.60723 15.8864 10.1199 16.3259 10.7777C16.7654 11.4355 17 12.2089 17 13C17 14.0609 16.5786 15.0783 15.8284 15.8284C15.0783 16.5786 14.0609 17 13 17ZM19 0H7C5.14409 0.00198528 3.36477 0.740121 2.05245 2.05245C0.740121 3.36477 0.00198528 5.14409 0 7V19C0.00198528 20.8559 0.740121 22.6352 2.05245 23.9476C3.36477 25.2599 5.14409 25.998 7 26H19C20.8559 25.998 22.6352 25.2599 23.9476 23.9476C25.2599 22.6352 25.998 20.8559 26 19V7C25.998 5.14409 25.2599 3.36477 23.9476 2.05245C22.6352 0.740121 20.8559 0.00198528 19 0ZM24 19C24 20.3261 23.4732 21.5979 22.5355 22.5355C21.5979 23.4732 20.3261 24 19 24H7C5.67392 24 4.40215 23.4732 3.46447 22.5355C2.52678 21.5979 2 20.3261 2 19V7C2 5.67392 2.52678 4.40215 3.46447 3.46447C4.40215 2.52678 5.67392 2 7 2H19C20.3261 2 21.5979 2.52678 22.5355 3.46447C23.4732 4.40215 24 5.67392 24 7V19ZM21 6.5C21 6.79667 20.912 7.08668 20.7472 7.33335C20.5824 7.58003 20.3481 7.77229 20.074 7.88582C19.7999 7.99935 19.4983 8.02906 19.2074 7.97118C18.9164 7.9133 18.6491 7.77044 18.4393 7.56066C18.2296 7.35088 18.0867 7.08361 18.0288 6.79264C17.9709 6.50166 18.0007 6.20006 18.1142 5.92597C18.2277 5.65189 18.42 5.41762 18.6666 5.2528C18.9133 5.08797 19.2033 5 19.5 5C19.8978 5 20.2794 5.15804 20.5607 5.43934C20.842 5.72064 21 6.10218 21 6.5Z" fill="#A8A6A4"/>
+        </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kyoko-eng-67a9278b/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" id="linkedin" width="21" height="21" viewBox="0 0 26 26" fill="none">
+            <path d="M24 0H2C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V24C0 24.5304 0.210714 25.0391 0.585786 25.4142C0.960859 25.7893 1.46957 26 2 26H24C24.5304 26 25.0391 25.7893 25.4142 25.4142C25.7893 25.0391 26 24.5304 26 24V2C26 1.46957 25.7893 0.960859 25.4142 0.585786C25.0391 0.210714 24.5304 0 24 0ZM24 24H2V2H24V24ZM9 11V19C9 19.2652 8.89464 19.5196 8.70711 19.7071C8.51957 19.8946 8.26522 20 8 20C7.73478 20 7.48043 19.8946 7.29289 19.7071C7.10536 19.5196 7 19.2652 7 19V11C7 10.7348 7.10536 10.4804 7.29289 10.2929C7.48043 10.1054 7.73478 10 8 10C8.26522 10 8.51957 10.1054 8.70711 10.2929C8.89464 10.4804 9 10.7348 9 11ZM20 14.5V19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20C18.7348 20 18.4804 19.8946 18.2929 19.7071C18.1054 19.5196 18 19.2652 18 19V14.5C18 13.837 17.7366 13.2011 17.2678 12.7322C16.7989 12.2634 16.163 12 15.5 12C14.837 12 14.2011 12.2634 13.7322 12.7322C13.2634 13.2011 13 13.837 13 14.5V19C13 19.2652 12.8946 19.5196 12.7071 19.7071C12.5196 19.8946 12.2652 20 12 20C11.7348 20 11.4804 19.8946 11.2929 19.7071C11.1054 19.5196 11 19.2652 11 19V11C11.0012 10.7551 11.0923 10.5191 11.256 10.3369C11.4197 10.1546 11.6446 10.0388 11.888 10.0114C12.1314 9.98392 12.3764 10.0468 12.5765 10.188C12.7767 10.3292 12.918 10.539 12.9738 10.7775C13.6502 10.3186 14.4389 10.0526 15.2552 10.0081C16.0714 9.96368 16.8844 10.1424 17.6067 10.5251C18.329 10.9078 18.9335 11.48 19.3551 12.1803C19.7768 12.8806 19.9997 13.6825 20 14.5ZM9.5 7.5C9.5 7.79667 9.41203 8.08668 9.2472 8.33335C9.08238 8.58003 8.84811 8.77229 8.57403 8.88582C8.29994 8.99935 7.99834 9.02906 7.70736 8.97118C7.41639 8.9133 7.14912 8.77044 6.93934 8.56066C6.72956 8.35088 6.5867 8.08361 6.52882 7.79264C6.47094 7.50166 6.50065 7.20006 6.61418 6.92597C6.72771 6.65189 6.91997 6.41762 7.16665 6.2528C7.41332 6.08797 7.70333 6 8 6C8.39782 6 8.77936 6.15804 9.06066 6.43934C9.34196 6.72064 9.5 7.10218 9.5 7.5Z" fill="#A8A6A4"/>
+        </svg>
+        </a>
+    </footer>
+</body>
+</html>
